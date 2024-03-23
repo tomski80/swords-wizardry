@@ -23,7 +23,7 @@
   "version": "1.3.0",
   "compatibility": {
     "minimum": 11,
-    "verified": "11.315"
+    "verified": "11.313"
   },
   "esmodules": ["module/swords-wizardry.mjs"],
   "styles": ["css/swords-wizardry.css"],
