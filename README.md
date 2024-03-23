@@ -1,5 +1,5 @@
-# Game System for Sword & Wizardry 
-### Sword & Wizardry by Mythmere Games (mythmeregames.com)
+# Game System for Swords & Wizardry 
+### Swords & Wizardry by Mythmere Games (mythmeregames.com)
 ![Foundry v11](https://img.shields.io/badge/foundry-v11-green)
 
 ### Compatible with the Swords & Wizardry rules
