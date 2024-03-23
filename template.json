@@ -50,22 +50,28 @@
       },
       "abilities": {
         "str": {
-          "value": 10
+          "value": 10,
+          "prime": true
         },
         "dex": {
-          "value": 10
+          "value": 10,
+          "prime": true
         },
         "con": {
-          "value": 10
+          "value": 10,
+          "prime": true
         },
         "int": {
-          "value": 10
+          "value": 10,
+          "prime": true
         },
         "wis": {
-          "value": 10
+          "value": 10,
+          "prime": true
         },
         "cha": {
-          "value": 10
+          "value": 10,
+          "prime": true
         }
       },
       "bonuses": {
@@ -117,7 +123,7 @@
       "templates": ["base"],
       "quantity": 1,
       "weight": 0,
-      "formula": "d20 + @toHit.v + @str.mod",
+      "formula": "d20 + @toHit.v",
       "hitdamage" : "1d4"
     },
     "feature": {

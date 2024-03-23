@@ -203,13 +203,13 @@
   text-align: center;
 }
 
-/* Styles limited to swords-wizardy sheets */
+/* Styles limited to swords-wizardry sheets */
 /* font-family: "Roboto", sans-serif; */
-.swords-wizardy .item-form {
+.swords-wizardry .item-form {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.swords-wizardy .sheet-header {
+.swords-wizardry .sheet-header {
   flex: 0 auto;
   overflow: hidden;
   display: flex;
@@ -218,15 +218,15 @@
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.swords-wizardy .sheet-header .profile-img {
+.swords-wizardry .sheet-header .profile-img {
   flex: 0  100px;
   height: 100px;
   margin-right: 10px;
 }
-.swords-wizardy .sheet-header .header-fields {
+.swords-wizardry .sheet-header .header-fields {
   flex: 1;
 }
-.swords-wizardy .sheet-header h2.charname {
+.swords-wizardry .sheet-header h2.charname {
   height: 30px;
   width:  100%;
   padding: 0px;
@@ -234,13 +234,13 @@
   border-bottom: 0;
 }
 
-.swords-wizardy .sheet-header h2.charname input {
+.swords-wizardry .sheet-header h2.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.swords-wizardy .sheet-header h3.charname {
+.swords-wizardry .sheet-header h3.charname {
   height: 30px;
   width: 100%;
   padding: 0px;
@@ -265,36 +265,36 @@ h3 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.swords-wizardy .sheet-tabs {
+.swords-wizardry .sheet-tabs {
   flex: 0;
 }
-.swords-wizardy .sheet-body,
-.swords-wizardy .sheet-body .tab,
-.swords-wizardy .sheet-body .tab .editor {
+.swords-wizardry .sheet-body,
+.swords-wizardry .sheet-body .tab,
+.swords-wizardry .sheet-body .tab .editor {
   height: 100%;
 }
-.swords-wizardy .tox .tox-editor-container {
+.swords-wizardry .tox .tox-editor-container {
   background: #fff;
 }
-.swords-wizardy .tox .tox-edit-area {
+.swords-wizardry .tox .tox-edit-area {
   padding: 0 8px;
 }
 
-.swords-wizardy .resource-label {
+.swords-wizardry .resource-label {
   font-weight: bold;
 }
 
-.swords-wizardy .resource-value {
+.swords-wizardry .resource-value {
   height: 16px;
   margin-top: 3px;
   font-size: 14px;
 }
 
-.swords-wizardy .bonus-label {
+.swords-wizardry .bonus-label {
   font-size: 12px;
 }
 
-.swords-wizardy .bonus-value {
+.swords-wizardry .bonus-value {
   height: 16px;
   margin-top: 3px;
   margin-bottom: 5px;
@@ -302,7 +302,7 @@ h3 {
 }
 
 
-.swords-wizardy .items-header {
+.swords-wizardry .items-header {
   height: 20px;
   margin: 2px 0;
   padding: 0;
@@ -311,17 +311,17 @@ h3 {
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.swords-wizardy .items-header > * {
+.swords-wizardry .items-header > * {
   font-size: 14px;
   text-align: center;
 }
-.swords-wizardy .items-header .item-name {
+.swords-wizardry .items-header .item-name {
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
   display: flex;
 }
-.swords-wizardy .items-list {
+.swords-wizardry .items-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -329,12 +329,12 @@ h3 {
   scrollbar-width: thin;
   color: #444;
 }
-.swords-wizardy .items-list .item-list {
+.swords-wizardry .items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.swords-wizardy .items-list .item-name {
+.swords-wizardry .items-list .item-name {
   flex: 2;
   margin: 0;
   overflow: hidden;
@@ -343,46 +343,46 @@ h3 {
   align-items: center;
   display: flex;
 }
-.swords-wizardy .items-list .item-name h3, .swords-wizardy .items-list .item-name h4 {
+.swords-wizardry .items-list .item-name h3, .swords-wizardry .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
-.swords-wizardy .items-list .item-controls {
+.swords-wizardry .items-list .item-controls {
   display: flex;
   flex: 0 0 100px;
   justify-content: flex-end;
 }
-.swords-wizardy .items-list .item-controls a {
+.swords-wizardry .items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
-.swords-wizardy .items-list .item {
+.swords-wizardry .items-list .item {
   align-items: center;
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
 }
-.swords-wizardy .items-list .item:last-child {
+.swords-wizardry .items-list .item:last-child {
   border-bottom: none;
 }
-.swords-wizardy .items-list .item .item-name {
+.swords-wizardry .items-list .item .item-name {
   color: #191813;
 }
-.swords-wizardy .items-list .item .item-name .item-image {
+.swords-wizardry .items-list .item .item-name .item-image {
   flex: 0 0 30px;
   height: 30px;
   background-size: 30px;
   border: none;
   margin-right: 5px;
 }
-.swords-wizardy .items-list .item-prop {
+.swords-wizardry .items-list .item-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.swords-wizardy .items-list .items-header {
+.swords-wizardry .items-list .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -391,26 +391,26 @@ h3 {
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.swords-wizardy .items-list .items-header > * {
+.swords-wizardry .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
 }
-.swords-wizardy .items-list .items-header .item-name {
+.swords-wizardry .items-list .items-header .item-name {
   padding-left: 5px;
   text-align: left;
 }
-.swords-wizardy .item-formula {
+.swords-wizardry .item-formula {
   flex: 0 0 200px;
   padding: 0 8px;
 }
-.swords-wizardy .effects .item .effect-source,
-.swords-wizardy .effects .item .effect-duration,
-.swords-wizardy .effects .item .effect-controls {
+.swords-wizardry .effects .item .effect-source,
+.swords-wizardry .effects .item .effect-duration,
+.swords-wizardry .effects .item .effect-controls {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.swords-wizardy .effects .item .effect-controls {
+.swords-wizardry .effects .item .effect-controls {
   border: none;
 }

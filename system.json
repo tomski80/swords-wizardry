@@ -1,7 +1,7 @@
 {
-  "id": "swords-wizardy",
-  "title": "Swords & Wizardy",
-  "description": "The Swords & Wizardy system for FoundryVTT!",
+  "id": "swords-wizardry",
+  "title": "Swords & Wizardry",
+  "description": "The Swords & Wizardry system for FoundryVTT!",
   "authors": [
     {
       "name": "Asacolips",
@@ -16,8 +16,8 @@
   "media": [
     {
       "type": "setup",
-      "url": "systems/swords-wizardy/assets/anvil-impact.png",
-      "thumbnail": "systems/swords-wizardy/assets/anvil-impact.png"
+      "url": "systems/swords-wizardry/assets/anvil-impact.png",
+      "thumbnail": "systems/swords-wizardry/assets/anvil-impact.png"
     }
   ],
   "version": "1.3.0",
@@ -25,8 +25,8 @@
     "minimum": 11,
     "verified": "11.315"
   },
-  "esmodules": ["module/swords-wizardy.mjs"],
-  "styles": ["css/swords-wizardy.css"],
+  "esmodules": ["module/swords-wizardry.mjs"],
+  "styles": ["css/swords-wizardry.css"],
   "languages": [
     {
       "lang": "en",
@@ -39,7 +39,7 @@
   "socket": false,
   "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
   "download": "This must link to a .zip file of the current version",
-  "background": "systems/swords-wizardy/assets/anvil-impact.png",
+  "background": "systems/swords-wizardry/assets/anvil-impact.png",
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",

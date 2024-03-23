@@ -7,11 +7,11 @@ import {
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class SwordsWizardyActorSheet extends ActorSheet {
+export class SwordsWizardryActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['swords-wizardy', 'sheet', 'actor'],
+      classes: ['swords-wizardry', 'sheet', 'actor'],
       width: 600,
       height: 600,
       tabs: [
@@ -26,7 +26,7 @@ export class SwordsWizardyActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/swords-wizardy/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+    return `systems/swords-wizardry/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
   /* -------------------------------------------- */
@@ -80,11 +80,11 @@ export class SwordsWizardyActorSheet extends ActorSheet {
   _prepareCharacterData(context) {
     // Handle ability scores.
     for (let [k, v] of Object.entries(context.system.abilities)) {
-      v.label = game.i18n.localize(CONFIG.SWORDS_WIZARDY.abilities[k]) ?? k;
+      v.label = game.i18n.localize(CONFIG.SWORDS_WIZARDRY.abilities[k]) ?? k;
     }
 
     for (let [k, v] of Object.entries(context.system.bonuses)) {
-      v.label = game.i18n.localize(CONFIG.SWORDS_WIZARDY.bonuses[k]) ?? k;
+      v.label = game.i18n.localize(CONFIG.SWORDS_WIZARDRY.bonuses[k]) ?? k;
     }
   }
 

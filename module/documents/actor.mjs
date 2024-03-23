@@ -2,7 +2,7 @@
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
  * @extends {Actor}
  */
-export class SwordsWizardyActor extends Actor {
+export class SwordsWizardryActor extends Actor {
   /** @override */
   prepareData() {
     // Prepare data for the actor. Calling the super version of this executes
@@ -30,7 +30,7 @@ export class SwordsWizardyActor extends Actor {
   prepareDerivedData() {
     const actorData = this;
     const systemData = actorData.system;
-    const flags = actorData.flags.swordswizardy || {};
+    const flags = actorData.flags.swordswizardry || {};
 
     // Make separate methods for each Actor type (character, npc, etc.) to keep
     // things organized.

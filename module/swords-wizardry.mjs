@@ -1,12 +1,12 @@
 // Import document classes.
-import { SwordsWizardyActor } from './documents/actor.mjs';
-import { SwordsWizardyItem } from './documents/item.mjs';
+import { SwordsWizardryActor } from './documents/actor.mjs';
+import { SwordsWizardryItem } from './documents/item.mjs';
 // Import sheet classes.
-import { SwordsWizardyActorSheet } from './sheets/actor-sheet.mjs';
-import { SwordsWizardyItemSheet } from './sheets/item-sheet.mjs';
+import { SwordsWizardryActorSheet } from './sheets/actor-sheet.mjs';
+import { SwordsWizardryItemSheet } from './sheets/item-sheet.mjs';
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from './helpers/templates.mjs';
-import { SWORDS_WIZARDY } from './helpers/config.mjs';
+import { SWORDS_WIZARDRY } from './helpers/config.mjs';
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -15,14 +15,14 @@ import { SWORDS_WIZARDY } from './helpers/config.mjs';
 Hooks.once('init', function () {
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
-  game.swordswizardy = {
-    SwordsWizardyActor,
-    SwordsWizardyItem,
+  game.swordswizardry = {
+    SwordsWizardryActor,
+    SwordsWizardryItem,
     rollItemMacro,
   };
 
   // Add custom constants for configuration.
-  CONFIG.SWORDS_WIZARDY = SWORDS_WIZARDY;
+  CONFIG.SWORDS_WIZARDRY = SWORDS_WIZARDRY;
 
   /**
    * Set an initiative formula for the system
@@ -34,8 +34,8 @@ Hooks.once('init', function () {
   };
 
   // Define custom Document classes
-  CONFIG.Actor.documentClass = SwordsWizardyActor;
-  CONFIG.Item.documentClass = SwordsWizardyItem;
+  CONFIG.Actor.documentClass = SwordsWizardryActor;
+  CONFIG.Item.documentClass = SwordsWizardryItem;
 
   // Active Effects are never copied to the Actor,
   // but will still apply to the Actor from within the Item
@@ -44,14 +44,14 @@ Hooks.once('init', function () {
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet);
-  Actors.registerSheet('swords-wizardy', SwordsWizardyActorSheet, {
+  Actors.registerSheet('swords-wizardry', SwordsWizardryActorSheet, {
     makeDefault: true,
-    label: 'SWORDS_WIZARDY.SheetLabels.Actor',
+    label: 'SWORDS_WIZARDRY.SheetLabels.Actor',
   });
   Items.unregisterSheet('core', ItemSheet);
-  Items.registerSheet('swords-wizardy', SwordsWizardyItemSheet, {
+  Items.registerSheet('swords-wizardry', SwordsWizardryItemSheet, {
     makeDefault: true,
-    label: 'SWORDS_WIZARDY.SheetLabels.Item',
+    label: 'SWORDS_WIZARDRY.SheetLabels.Item',
   });
 
   // Preload Handlebars templates.
@@ -99,7 +99,7 @@ async function createItemMacro(data, slot) {
   const item = await Item.fromDropData(data);
 
   // Create the macro command using the uuid.
-  const command = `game.swordswizardy.rollItemMacro("${data.uuid}");`;
+  const command = `game.swordswizardry.rollItemMacro("${data.uuid}");`;
   let macro = game.macros.find(
     (m) => m.name === item.name && m.command === command
   );
@@ -109,7 +109,7 @@ async function createItemMacro(data, slot) {
       type: 'script',
       img: item.img,
       command: command,
-      flags: { 'swords-wizardy.itemMacro': true },
+      flags: { 'swords-wizardry.itemMacro': true },
     });
   }
   game.user.assignHotbarMacro(macro, slot);

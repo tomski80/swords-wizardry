@@ -7,11 +7,11 @@ import {
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheet}
  */
-export class SwordsWizardyItemSheet extends ItemSheet {
+export class SwordsWizardryItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['swords-wizardy', 'sheet', 'item'],
+      classes: ['swords-wizardry', 'sheet', 'item'],
       width: 520,
       height: 480,
       tabs: [
@@ -26,7 +26,7 @@ export class SwordsWizardyItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = 'systems/swords-wizardy/templates/item';
+    const path = 'systems/swords-wizardry/templates/item';
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.hbs`;
 

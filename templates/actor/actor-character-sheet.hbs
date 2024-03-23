@@ -102,7 +102,7 @@
             {{#each system.abilities as |ability key|}}
             <div class="ability flexrow flex-group-center">
               <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
-              <input class="checkbox-small" type="checkbox" id="prime-attribute" name="prime-attribute" value="{{key}}">
+              <input class="checkbox-small" type="checkbox" name="system.abilities.{{key}}.prime" {{checked ability.prime}} |{{log  ability}} />
               <input class="resource-value" type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
              <!-- <span class="ability-mod rollable" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span> -->
             </div>
@@ -123,7 +123,7 @@
         {{!-- For the main features list, span the right two columns --}}
         <section class="main grid-span-5">
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
-          {{> "systems/swords-wizardy/templates/actor/parts/actor-features.hbs"}}
+          {{> "systems/swords-wizardry/templates/actor/parts/actor-features.hbs"}}
         </section>
 
       </section>
@@ -150,17 +150,17 @@
         <label class="bonus-label  align-left" >Other</label>
         <input class="bonus-value  align-left" type="text" name="system.treasure.misc" value="{{system.treasure.misc}}" data-dtype="Number"/>
       </div>
-       {{> "systems/swords-wizardy/templates/actor/parts/actor-items.hbs"}}
+       {{> "systems/swords-wizardry/templates/actor/parts/actor-items.hbs"}}
     </div>
 
     {{!-- Owned Spells Tab --}}
     <div class="tab spells" data-group="primary" data-tab="spells">
-      {{> "systems/swords-wizardy/templates/actor/parts/actor-spells.hbs"}}
+      {{> "systems/swords-wizardry/templates/actor/parts/actor-spells.hbs"}}
     </div>
 
     {{!-- Active Effects Tab --}}
     <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-      {{> "systems/swords-wizardy/templates/actor/parts/actor-effects.hbs"}}
+      {{> "systems/swords-wizardry/templates/actor/parts/actor-effects.hbs"}}
     </div>
 
   </section>

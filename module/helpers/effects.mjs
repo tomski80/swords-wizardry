@@ -43,17 +43,17 @@ export function prepareActiveEffectCategories(effects) {
   const categories = {
     temporary: {
       type: 'temporary',
-      label: game.i18n.localize('SWORDS_WIZARDY.Effect.Temporary'),
+      label: game.i18n.localize('SWORDS_WIZARDRY.Effect.Temporary'),
       effects: [],
     },
     passive: {
       type: 'passive',
-      label: game.i18n.localize('SWORDS_WIZARDY.Effect.Passive'),
+      label: game.i18n.localize('SWORDS_WIZARDRY.Effect.Passive'),
       effects: [],
     },
     inactive: {
       type: 'inactive',
-      label: game.i18n.localize('SWORDS_WIZARDY.Effect.Inactive'),
+      label: game.i18n.localize('SWORDS_WIZARDRY.Effect.Inactive'),
       effects: [],
     },
   };

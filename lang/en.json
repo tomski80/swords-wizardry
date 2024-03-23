@@ -1,5 +1,5 @@
 {
-  "SWORDS_WIZARDY": {
+  "SWORDS_WIZARDRY": {
     "Ability": {
       "Str": { "long": "Strength", "abbr": "str" },
       "Con": { "long": "Constitution", "abbr": "con" },
@@ -20,8 +20,8 @@
       "MaxSpecialHirelings": { "long": "Max # of Special Hirelings", "abbr": "numhire" }
     },
     "SheetLabels": {
-      "Actor": "SwordsWizardy Actor Sheet",
-      "Item": "SwordsWizardy Item Sheet"
+      "Actor": "SwordsWizardry Actor Sheet",
+      "Item": "SwordsWizardry Item Sheet"
     },
     "Item": {
       "Spell": {
