@@ -1,0 +1,52 @@
+{
+  "SWORDS_WIZARDY": {
+    "Ability": {
+      "Str": { "long": "Strength", "abbr": "str" },
+      "Con": { "long": "Constitution", "abbr": "con" },
+      "Dex": { "long": "Dexterity", "abbr": "dex" },
+      "Int": { "long": "Intelligence", "abbr": "int" },
+      "Wis": { "long": "Wisdom", "abbr": "wis" },
+      "Cha": { "long": "Charisma", "abbr": "cha" }
+    },
+    "Bonus": {
+      "toHit": { "long": "Bonus to Hit", "abbr": "toHit" },
+      "OpenDoor": { "long": "Open Door", "abbr": "opendoor" },
+      "Damage": { "long": "Damage Bonus", "abbr": "dmgbonus" },
+      "toMissiles": { "long": "Bonus to Missiles", "abbr": "toMissiles" },
+      "Armour": { "long": "Armour Bonus", "abbr": "ACbonus" },
+      "HPBonus": { "long": "Hit Point Bonus", "abbr": "hpbonus" },
+      "RaiseDeadChance": { "long": "Raise Dead Survival", "abbr": "respawn" },
+      "AddLanguages": { "long": "Additional Languages", "abbr": "pluslan" },
+      "MaxSpecialHirelings": { "long": "Max # of Special Hirelings", "abbr": "numhire" }
+    },
+    "SheetLabels": {
+      "Actor": "SwordsWizardy Actor Sheet",
+      "Item": "SwordsWizardy Item Sheet"
+    },
+    "Item": {
+      "Spell": {
+        "SpellLVL": "Level {level} Spells",
+        "AddLVL": "Add LVL {level}"
+      }
+    },
+    "Effect": {
+      "Source": "Source",
+      "Toggle": "Toggle Effect",
+      "Temporary": "Temporary Effects",
+      "Passive": "Passive Effects",
+      "Inactive": "Inactive Effects"
+    }
+  },
+
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC"
+    },
+    "Item": {
+      "item": "Item",
+      "feature": "Feature",
+      "spell": "Spell"
+    }
+  }
+}
