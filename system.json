@@ -4,11 +4,11 @@
   "description": "The Swords & Wizardry system for FoundryVTT!",
   "authors": [
     {
-      "name": "Asacolips",
-      "discord": "asacolips"
+      "name": "T.Straszewski",
+      "discord": "---"
     }
   ],
-  "url": "Replace this with a link to your public repository",
+  "url": "https://github.com/tomski80/swords-wizardry",
   "license": "LICENSE.txt",
   "readme": "README.md",
   "bugs": "Replace this with a link to file issues or tickets",
@@ -37,8 +37,8 @@
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
-  "download": "This must link to a .zip file of the current version",
+  "manifest": "https://github.com/tomski80/swords-wizardry/releases/download/v0.1.0-alpha/system.json",
+  "download": "https://github.com/tomski80/swords-wizardry/releases/download/v0.1.0-alpha/swords-wizardry.zip",
   "background": "systems/swords-wizardry/assets/anvil-impact.png",
   "gridDistance": 5,
   "gridUnits": "ft",
