@@ -107,7 +107,7 @@
     }
   },
   "Item": {
-    "types": ["item", "class-ability", "spell"],
+    "types": ["item", "feature", "spell"],
     "templates": {
       "base": {
         "description": ""
@@ -120,7 +120,7 @@
       "formula": "d20 + @toHit.v + @str.mod",
       "hitdamage" : "1d4"
     },
-    "class-ability": {
+    "feature": {
       "templates": ["base"]
     },
     "spell": {
