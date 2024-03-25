@@ -19,6 +19,14 @@
       "AddLanguages": { "long": "Additional Languages", "abbr": "pluslan" },
       "MaxSpecialHirelings": { "long": "Max # of Special Hirelings", "abbr": "numhire" }
     },
+    "thieving": {
+      "climbwalls": { "long": "Climb Walls", "abbr": "clmbwalls" },
+      "delicatetask": { "long": "Delicate Task", "abbr": "dtask" },
+      "hearsound": { "long": "Hear Sound", "abbr": "hear" },
+      "hideinshadow": { "long": "Hide in Shadows", "abbr": "hide" },
+      "movesilently": { "long": "Move Silently", "abbr": "movesilent" },
+      "openlocks": { "long": "Open Locaks", "abbr": "openlocks" }
+    },
     "SheetLabels": {
       "Actor": "SwordsWizardry Actor Sheet",
       "Item": "SwordsWizardry Item Sheet"

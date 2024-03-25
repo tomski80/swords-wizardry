@@ -46,7 +46,11 @@
         "Class" : "Class",
         "Ancestry" : "Ancestry",
         "Alignment" : "Alignment",
-        "Age" : 20
+        "Age" : 20,
+        "deity" : "Deity",
+        "move-rate": {
+          "value": 0
+        }
       },
       "abilities": {
         "str": {
@@ -105,6 +109,26 @@
         "MaxSpecialHirelings" : {
           "value" : 0
         } 
+      },
+      "thieving": {
+        "climbwalls" : {
+          "value" : 0
+        },
+        "delicatetask" : {
+          "value" : 0
+        },
+        "hearsound" : {
+          "value" : 0
+        },
+        "hideinshadow" : {
+          "value" : 0
+        },
+        "movesilently" : {
+          "value" : 0
+        },
+        "openlocks" : {
+          "value" : 0
+        }
       }
     },
     "npc": {

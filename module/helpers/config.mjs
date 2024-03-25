@@ -34,3 +34,12 @@ SWORDS_WIZARDRY.bonuses = {
   AddLanguages: 'SWORDS_WIZARDRY.Bonus.AddLanguages.long',
   MaxSpecialHirelings: 'SWORDS_WIZARDRY.Bonus.MaxSpecialHirelings.long'
 }
+
+SWORDS_WIZARDRY.thieving = {
+  climbwalls: 'SWORDS_WIZARDRY.thieving.climbwalls.long',
+  delicatetask: 'SWORDS_WIZARDRY.thieving.delicatetask.long',
+  hearsound: 'SWORDS_WIZARDRY.thieving.hearsound.long',
+  hideinshadow: 'SWORDS_WIZARDRY.thieving.hideinshadow.long',
+  movesilently: 'SWORDS_WIZARDRY.thieving.movesilently.long',
+  openlocks: 'SWORDS_WIZARDRY.thieving.openlocks.long',
+}
