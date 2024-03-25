@@ -129,6 +129,18 @@
         "openlocks" : {
           "value" : 0
         }
+      },
+      "tohitarmour": {
+        "0" : 0,
+        "1" : 0,
+        "2" : 0,
+        "3" : 0,
+        "4" : 0,
+        "5" : 0,
+        "6" : 0,
+        "7" : 0,
+        "8" : 0,
+        "9" : 0
       }
     },
     "npc": {
@@ -137,13 +149,19 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
+    "types": ["item", "feature", "spell", "weapon"],
     "templates": {
       "base": {
         "description": ""
       }
     },
     "item": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0,
+      "formula": "d20"
+    },
+    "weapon": {
       "templates": ["base"],
       "quantity": 1,
       "weight": 0,

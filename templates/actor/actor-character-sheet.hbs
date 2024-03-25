@@ -88,10 +88,11 @@
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     <a class="item" data-tab="features">Main</a>
+    <a class="item" data-tab="weapons">Combat</a>
     <a class="item" data-tab="items">Equipment</a>
     <a class="item" data-tab="spells">Spells</a>
     <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="effects">Effects</a>
+   <!-- <a class="item" data-tab="effects">Effects</a> -->
   </nav>
 
   {{!-- Sheet Body --}}
@@ -124,6 +125,15 @@
               <input class="bonus-value" type="text" name="system.bonuses.{{key}}.value" value="{{bonus.value}}" data-dtype="Number"/>
             </div>
             {{/each}}
+            <hr>
+             <span class="resource-label"><h3>Thieving Skills</h3></span>
+          {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
+            {{#each system.thieving as |skill key|}}
+            <div class="flexrow flex-group-center">
+              <label for="system.thieving.{{skill}}.value" class="bonus-label flexlarge align-left" data-label="{{skill.label}}" | {{log  skill}}>{{skill.label}}</label>
+              <input class="bonus-value" type="text" name="system.thieving.{{key}}.value" value="{{skill.value}}" data-dtype="Number"/>
+            </div>
+            {{/each}}
         </div>
         </aside>
         {{!-- For the main features list, span the right two columns --}}
@@ -132,14 +142,7 @@
           {{> "systems/swords-wizardry/templates/actor/parts/actor-features.hbs"}}
         </section>
 
-        <span class="resource-label"><h3>Thieving Skills</h3></span>
-          {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
-            {{#each system.thieving as |skill key|}}
-            <div class="flexrow flex-group-center">
-              <label for="system.thieving.{{skill}}.value" class="bonus-label flexlarge align-left" data-label="{{skill.label}}" | {{log  skill}}>{{skill.label}}</label>
-              <input class="bonus-value" type="text" name="system.thieving.{{key}}.value" value="{{skill.value}}" data-dtype="Number"/>
-            </div>
-            {{/each}}
+       
       </section>
     </div>
 
@@ -147,6 +150,11 @@
     <div class="tab biography" data-group="primary" data-tab="description">
       {{!-- If you want TinyMCE editors to output inline rolls when rendered, you need to pass the actor's roll data to the rollData property. --}}
       {{editor system.biography target="system.biography" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+
+    {{!-- Weapons Tab --}}
+    <div class="tab weapons" data-group="primary" data-tab="weapons">
+      {{> "systems/swords-wizardry/templates/actor/parts/actor-weapons.hbs"}}
     </div>
 
     {{!-- Owned Items Tab --}}

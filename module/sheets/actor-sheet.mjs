@@ -105,6 +105,7 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     // Initialize containers.
     const gear = [];
     const features = [];
+    const weapons = [];
     const spells = {
       0: [],
       1: [],
@@ -125,6 +126,10 @@ export class SwordsWizardryActorSheet extends ActorSheet {
       if (i.type === 'item') {
         gear.push(i);
       }
+      else if (i.type === 'weapon')
+      {
+        weapons.push(i);
+      }
       // Append to features.
       else if (i.type === 'feature') {
         features.push(i);
@@ -140,6 +145,7 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     // Assign and return
     context.gear = gear;
     context.features = features;
+    context.weapons = weapons;
     context.spells = spells;
   }
 

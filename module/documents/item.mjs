@@ -58,35 +58,34 @@ export class SwordsWizardryItem extends Item {
       const rollData = this.getRollData();
 
       // Invoke the roll and submit it to chat.
-      console.log("ROLL FORMULA = ");
-      console.log(rollData.formula);
-      console.log("Roll DATA = ")
-      console.log(rollData);
-      console.log(item);
-      console.log("Damage Formula!");
-      console.log(item.system.hitdamage);
       const roll = new Roll(rollData.formula, rollData.actor);
       // If you need to store the value first, uncomment the next line.
       //const result = await roll.evaluate();
       const diceHtml = await roll.render();
 
-      /*
-      roll.toMessage({
-        speaker: speaker,
-        rollMode: rollMode,
-        flavor: label,
-      });
-      */
-      let results_html = `<h3>Rolled: ${item.name}</h3>
-      <hr>
-      <a class="inline-result">
-      <span>${diceHtml}</span>
-      <div></div>
-      <hr>
-      <span>Damage: [[/r ${item.system.hitdamage} ]] </span>
-      <hr>
-      <div></div>`
-
+      let results_html;
+      if(item.system.hitdamage)
+      {
+        results_html = `<h3>Rolled: ${item.name}</h3>
+        <hr>
+        <a class="inline-result">
+        <span>${diceHtml}</span>
+        <div></div>
+        <hr>
+        <span>Damage: [[/r ${item.system.hitdamage} ]] </span>
+        <hr>
+        <div></div>`
+  
+      }
+      else
+      {
+        results_html = `<h3>Rolled: ${item.name}</h3>
+        <hr>
+        <a class="inline-result">
+        <span>${diceHtml}</span>
+        <div></div>`
+      }
+      
       ChatMessage.create({
         type: CONST.CHAT_MESSAGE_TYPES.ROLL,
         rolls: [roll],
@@ -101,5 +100,4 @@ export class SwordsWizardryItem extends Item {
   }
 }
 
-////////////////////////
  
