@@ -67,7 +67,7 @@ export class SwordsWizardryActor extends Actor {
 
     // Make modifications to data here. For example:
     const systemData = actorData.system;
-    systemData.xp = systemData.cr * systemData.cr * 100;
+    //systemData.xp = systemData.cr * systemData.cr * 100;
   }
 
   /**

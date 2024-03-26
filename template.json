@@ -148,7 +148,31 @@
     },
     "npc": {
       "templates": ["base"],
-      "cr": 0
+      "cl": 0,
+      "hd": 1,
+      "morale": 0,
+      "special": "",
+      "move-rate": {
+        "value" : 12
+      },
+      "treasure": "",
+      "xp": {
+        "value" : 100
+      },
+      "alignment" : "Alignment",
+      "description" : "",
+      "tohitarmour": {
+        "0" : 0,
+        "1" : 0,
+        "2" : 0,
+        "3" : 0,
+        "4" : 0,
+        "5" : 0,
+        "6" : 0,
+        "7" : 0,
+        "8" : 0,
+        "9" : 0
+      }
     }
   },
   "Item": {
