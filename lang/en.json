@@ -25,7 +25,7 @@
       "hearsound": { "long": "Hear Sound", "abbr": "hear" },
       "hideinshadow": { "long": "Hide in Shadows", "abbr": "hide" },
       "movesilently": { "long": "Move Silently", "abbr": "movesilent" },
-      "openlocks": { "long": "Open Locaks", "abbr": "openlocks" }
+      "openlocks": { "long": "Open Locks", "abbr": "openlocks" }
     },
     "SheetLabels": {
       "Actor": "SwordsWizardry Actor Sheet",
