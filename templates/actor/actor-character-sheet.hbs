@@ -114,7 +114,7 @@
           use both the "grid" and "grid-Ncol" class where "N" can be any number
           from 1 to 12 and will create that number of columns.  --}}
           <div class="abilities flexcol">
-             <span class="resource-label"><h3>Attribue Scores</h3></span>
+             <span class="resource-label"><h3>Attribute Scores</h3></span>
             {{#each system.abilities as |ability key|}}
             <div class="ability flexrow flex-group-center">
               <label for="system.abilities.{{key}}.value" class="resource-label flexlarge align-left" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
@@ -124,7 +124,7 @@
             </div>
             {{/each}}
             <hr>
-          <span class="resource-label"><h3>Attribue Bonuses</h3></span>
+          <span class="resource-label"><h3>Attribute Bonuses</h3></span>
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
             {{#each system.bonuses as |bonus key|}}
             <div class="flexrow flex-group-center">
