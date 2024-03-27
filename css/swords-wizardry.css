@@ -60,6 +60,12 @@
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
+.grid-10col-n {
+  grid-column: span 10/span 10;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 0;
+}
+
 .grid-11col {
   grid-column: span 11/span 11;
   grid-template-columns: repeat(11, minmax(0, 1fr));
@@ -68,6 +74,12 @@
 .grid-12col {
   grid-column: span 12/span 12;
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-19col {
+  grid-column: span 19/span 19;
+  grid-template-columns: repeat(19, minmax(0, 1fr));
+  gap: 0;
 }
 
 .grid-start-2 {
@@ -158,6 +170,10 @@
   grid-column-end: span 12;
 }
 
+.grid-span-18 {
+  grid-column-end: span 18;
+}
+
 .flex-group-center,
 .flex-group-left,
 .flex-group-right {
@@ -201,6 +217,11 @@
 .align-center {
   justify-content: center;
   text-align: center;
+}
+
+.nomargin {
+  margin: 0;
+  padding: 1;
 }
 
 /* Styles limited to swords-wizardry sheets */

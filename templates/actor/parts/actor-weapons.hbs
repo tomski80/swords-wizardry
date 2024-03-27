@@ -3,20 +3,20 @@
 
 <h3  class="resource-label align-center">Roll Needed to Hit Armor Class</h3>
 
-<div class="grid grid-10col align-center">
+<div class="grid grid-19col align-center">
     {{#each system.tohitarmour as |val key|}}
             <div>
-              <label for="system.tohitarmour.{{val}}.value" class="bonus-label flexlarge align-center" data-label="{{key}}">{{key}}</label>
+              <label for="system.tohitarmour.{{val}}.value" class="nomargin align-center" data-label="{{key}}"> {{key}} </label>
             </div>
            
     {{/each}}
-     {{#each system.tohitarmour as |val key|}}
-         
+    {{#each system.tohitarmour as |val key|}}
              <div>
-              <input class="tohitarmour-value flexlarge align-center" type="text" name="system.tohitarmour.{{key}}" value="{{val}}" data-dtype="Number"/>
+              <input class="nomargin align-center" type="text" name="system.tohitarmour.{{key}}" value="{{val}}" data-dtype="Number"/>
             </div>
     {{/each}}
 </div>
+
 <br>
 
 <ol class='items-list'>
