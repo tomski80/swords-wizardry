@@ -132,22 +132,30 @@
               <input class="bonus-value" type="text" name="system.bonuses.{{key}}.value" value="{{bonus.value}}" data-dtype="Number"/>
             </div>
             {{/each}}
-            <hr>
-             <span class="resource-label"><h3>Thieving Skills</h3></span>
-          {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
-            {{#each system.thieving as |skill key|}}
-            <div class="flexrow flex-group-center">
-              <label for="system.thieving.{{skill}}.value" class="bonus-label flexlarge align-left" data-label="{{skill.label}}" | {{log  skill}}>{{skill.label}}</label>
-              <input class="bonus-value" type="text" name="system.thieving.{{key}}.value" value="{{skill.value}}" data-dtype="Number"/>
-            </div>
-            {{/each}}
+            
+          
         </div>
         </aside>
         {{!-- For the main features list, span the right two columns --}}
         <section class="main grid-span-5">
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
           {{> "systems/swords-wizardry/templates/actor/parts/actor-features.hbs"}}
-        </section>
+
+          <aside class="sidebar grid-span-2">
+            <hr>
+            <div class="grid-span-4"></div>
+            <br><br>
+             <span class="resource-label"><h3>Thieving Skills</h3></span>
+          {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
+            {{#each system.thieving as |skill key|}}
+            <div class="flexrow flex-group-center">
+              <label for="system.thieving.{{skill}}.value" class="bonus-label flexlarge align-left" data-label="{{skill.label}}" | {{log  skill}}>{{skill.label}}</label>
+              <input class="bonus-value" type="text" name="system.thieving.{{key}}.value" value="{{skill.value}}" data-dtype="Number"/>
+              <div class="grid-span-4"></div> <div class="grid-span-4"></div>
+            </div>
+            {{/each}}
+      </aside>
+     </section>
 
        
       </section>
