@@ -224,6 +224,11 @@
   padding: 1;
 }
 
+.myborder {
+  border: #464646;
+  border-style:double;
+}
+
 /* Styles limited to swords-wizardry sheets */
 /* font-family: "Roboto", sans-serif; */
 .swords-wizardry .item-form {

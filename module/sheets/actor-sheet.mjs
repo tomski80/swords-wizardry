@@ -243,9 +243,6 @@ export class SwordsWizardryActorSheet extends ActorSheet {
       if (dataset.rollType == 'item') {
         const itemId = element.closest('.item').dataset.itemId;
         const item = this.actor.items.get(itemId);
-        console.log(">>>>>>>>>>>>>Roll formula?");
-        console.log(item);
-        console.log(this.actor);
         if (item) return item.roll();
       }
     }
@@ -255,8 +252,6 @@ export class SwordsWizardryActorSheet extends ActorSheet {
       let label = dataset.label ? `[ability] ${dataset.label}` : '';
       
       let roll = new Roll(dataset.roll, this.actor.getRollData());
-      console.log(">>>>>>>>>>>>>Roll formula?");
-      console.log(roll);
 
       roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),

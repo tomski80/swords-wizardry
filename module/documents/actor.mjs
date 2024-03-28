@@ -101,8 +101,6 @@ export class SwordsWizardryActor extends Actor {
     if (data.bonuses) {
       console.log("data.bonuses");
       for (let [k, v] of Object.entries(data.bonuses)) {
-        console.log(k);
-        console.log(v);
         data[k] = foundry.utils.deepClone(v);
       }
     }
