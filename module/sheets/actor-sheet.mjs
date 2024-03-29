@@ -107,7 +107,6 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     const features = [];
     const weapons = [];
     const spells = {
-      0: [],
       1: [],
       2: [],
       3: [],
@@ -136,7 +135,7 @@ export class SwordsWizardryActorSheet extends ActorSheet {
       }
       // Append to spells.
       else if (i.type === 'spell') {
-        if (i.system.spellLevel != undefined) {
+        if (i.system.spellLevel != undefined && i.system.spellLevel > 0) {    // added minimum check to not break old char sheets
           spells[i.system.spellLevel].push(i);
         }
       }
@@ -160,6 +159,21 @@ export class SwordsWizardryActorSheet extends ActorSheet {
       const li = $(ev.currentTarget).parents('.item');
       const item = this.actor.items.get(li.data('itemId'));
       item.sheet.render(true);
+    });
+
+    html.on('click', '.item-prepare', (ev) => {
+      const li = $(ev.currentTarget).parents('.item');
+      const item = this.actor.items.get(li.data('itemId'));
+      if(item.system.prepared === 0)
+      {
+        item.system.prepared = 1;
+      }
+      else
+      {
+        item.system.prepared = 0;
+      }
+      this.actor.render();
+      console.log(item);
     });
 
     // -------------------------------------------------------------

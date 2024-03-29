@@ -233,7 +233,8 @@
     },
     "spell": {
       "templates": ["base"],
-      "spellLevel": 1
+      "spellLevel": 1,
+      "prepared" : 0
     }
   }
 }

@@ -4,6 +4,9 @@
       <div class='item-name'>
         {{localize 'SWORDS_WIZARDRY.Item.Spell.SpellLVL' level=spellLevel}}
       </div>
+      <div class="item-name">
+        {{localize 'Prepared'}}
+      </div>
       <div class='item-controls'>
         <a
           class='item-control item-create'
@@ -27,7 +30,14 @@
                 height='24'
               /></a>
           </div>
+          
           <h4>{{item.name}}</h4>
+           <a
+            class='item-control item-prepare'
+            title='{{localize "DOCUMENT.Edit" type='spell'}}'
+          >
+            <i class="fas {{#if item.system.prepared }}fa-check{{else}}fa-times{{/if}}"></i>
+          </a>
         </div>
         <div class='item-controls'>
           <a
