@@ -164,16 +164,9 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     html.on('click', '.item-prepare', (ev) => {
       const li = $(ev.currentTarget).parents('.item');
       const item = this.actor.items.get(li.data('itemId'));
-      if(item.system.prepared === 0)
-      {
-        item.system.prepared = 1;
-      }
-      else
-      {
-        item.system.prepared = 0;
-      }
+      const status = !item.system.prepared;
+      item.update({ 'system.prepared' : status});
       this.actor.render();
-      console.log(item);
     });
 
     // -------------------------------------------------------------

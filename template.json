@@ -234,7 +234,7 @@
     "spell": {
       "templates": ["base"],
       "spellLevel": 1,
-      "prepared" : 0
+      "prepared" : false
     }
   }
 }
