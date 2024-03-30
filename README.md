@@ -9,5 +9,5 @@
 The author is not affiliated in any way with Mythmere Games LLC
 
 
-#### Formula example for Weapon and Attacks
+#### Formula example for Weapons and Attacks
 ![image](https://github.com/tomski80/swords-wizardry/assets/26262858/a6f5727b-ae8c-4ce8-8039-d2f9d2e46eae)
