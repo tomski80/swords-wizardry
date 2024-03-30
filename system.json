@@ -1,17 +1,17 @@
 {
   "id": "swords-wizardry",
   "title": "Swords & Wizardry",
-  "description": "The Swords & Wizardry system for FoundryVTT!",
+  "description": "The Swords & Wizardry compatible system for FoundryVTT!",
   "authors": [
     {
-      "name": "T.Straszewski",
+      "name": "Tomasz Straszewski",
       "discord": "---"
     }
   ],
   "url": "https://github.com/tomski80/swords-wizardry",
   "license": "LICENSE.txt",
   "readme": "README.md",
-  "bugs": "Replace this with a link to file issues or tickets",
+  "bugs": "",
   "changelog": "CHANGELOG.md",
   "media": [
     {
@@ -20,7 +20,7 @@
       "thumbnail": "systems/swords-wizardry/assets/anvil-impact.png"
     }
   ],
-  "version": "0.3.0",
+  "version": "1.0.0",
   "compatibility": {
     "minimum": 11,
     "verified": "11.313"

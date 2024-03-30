@@ -118,7 +118,7 @@
             {{#each system.abilities as |ability key|}}
             <div class="ability flexrow flex-group-center">
               <label for="system.abilities.{{key}}.value" class="resource-label flexlarge align-left" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
-              <input class="checkbox-small" type="checkbox" name="system.abilities.{{key}}.prime" {{checked ability.prime}} |{{log  ability}} />
+              <input class="checkbox-small" type="checkbox" name="system.abilities.{{key}}.prime" {{checked ability.prime}}/>
               <input class="resource-value" type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
              <!-- <span class="ability-mod rollable" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span> -->
             </div>
@@ -149,7 +149,7 @@
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
             {{#each system.thieving as |skill key|}}
             <div class="flexrow flex-group-center">
-              <label for="system.thieving.{{skill}}.value" class="bonus-label flexlarge align-left" data-label="{{skill.label}}" | {{log  skill}}>{{skill.label}}</label>
+              <label for="system.thieving.{{skill}}.value" class="bonus-label flexlarge align-left" data-label="{{skill.label}}">{{skill.label}}</label>
               <input class="bonus-value" type="text" name="system.thieving.{{key}}.value" value="{{skill.value}}" data-dtype="Number"/>
               <div class="grid-span-4"></div> <div class="grid-span-4"></div>
             </div>
