@@ -195,6 +195,24 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     // Rollable abilities.
     html.on('click', '.rollable', this._onRoll.bind(this));
 
+
+    html.on('click', '.item-inc', (ev) => {
+      const li = $(ev.currentTarget).parents('.item');
+      const item = this.actor.items.get(li.data('itemId'));
+      const newq = item.system.quantity + 1;
+      item.update({ 'system.quantity' : newq});
+      this.actor.render();
+    });
+
+    html.on('click', '.item-dec', (ev) => {
+      const li = $(ev.currentTarget).parents('.item');
+      const item = this.actor.items.get(li.data('itemId'));
+      const newq = item.system.quantity - 1;
+      if(newq > 0)
+        item.update({ 'system.quantity' : newq});
+      this.actor.render();
+    });
+    
     // Drag events for macros.
     if (this.actor.isOwner) {
       let handler = (ev) => this._onDragStart(ev);

@@ -34,7 +34,19 @@
       <div class='item-formula item-prop'>{{item.system.formula}}</div>
       <div class='item-damage item-prop'>{{item.system.hitdamage}}</div>
       -->
-      <div class='item-prop'>{{item.system.quantity}}</div>
+      <div></div>
+      <div class="flexrow">
+        
+        <div class='item-props'>
+          <a class='item-control item-dec'>
+            <i class="fas fa-minus"></i>
+          </a>
+          {{item.system.quantity}}
+          <a class='item-control item-inc'>
+            <i class="fas fa-plus"></i>
+          </a>
+        </div>
+      </div>
       <div class='item-prop'>{{item.system.weight}}</div>
       
       <div class='item-controls'>
