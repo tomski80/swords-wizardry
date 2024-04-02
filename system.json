@@ -16,8 +16,8 @@
   "media": [
     {
       "type": "setup",
-      "url": "systems/swords-wizardry/assets/anvil-impact.png",
-      "thumbnail": "systems/swords-wizardry/assets/anvil-impact.png"
+      "url": "",
+      "thumbnail": ""
     }
   ],
   "version": "1.0.2",
@@ -39,7 +39,7 @@
   "socket": false,
   "manifest": "https://github.com/tomski80/swords-wizardry/releases/download/v1.0.2/system.json",
   "download": "https://github.com/tomski80/swords-wizardry/releases/download/v1.0.2/swords-wizardry.zip",
-  "background": "systems/swords-wizardry/assets/anvil-impact.png",
+  "background": "",
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
