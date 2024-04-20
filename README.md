@@ -8,6 +8,10 @@
 
 The author is not affiliated in any way with Mythmere Games LLC
 
+### Languages: 
+
+ - English
+ - German (by René Kremer)
 
 #### Formula example for Weapons and Attacks
 ![image](https://github.com/tomski80/swords-wizardry/assets/26262858/a6f5727b-ae8c-4ce8-8039-d2f9d2e46eae)
