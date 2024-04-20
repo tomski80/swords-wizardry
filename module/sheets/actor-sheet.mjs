@@ -237,7 +237,7 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     // Grab any data associated with this control.
     const data = duplicate(header.dataset);
     // Initialize a default name.
-    const name = `New ${type.capitalize()}`;
+    const name = game.i18n.localize(`New.${type}`);
     // Prepare the item object.
     const itemData = {
       name: name,

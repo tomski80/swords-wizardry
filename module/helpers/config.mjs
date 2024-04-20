@@ -27,6 +27,7 @@ SWORDS_WIZARDRY.bonuses = {
   toHit: 'SWORDS_WIZARDRY.Bonus.toHit.long',
   OpenDoor: 'SWORDS_WIZARDRY.Bonus.OpenDoor.long',
   Damage: 'SWORDS_WIZARDRY.Bonus.Damage.long',
+  "Carry Mod": 'SWORDS_WIZARDRY.Bonus.CarryMod.long',
   toMissiles: 'SWORDS_WIZARDRY.Bonus.toMissiles.long',
   Armour: 'SWORDS_WIZARDRY.Bonus.Armour.long',
   HPBonus: 'SWORDS_WIZARDRY.Bonus.HPBonus.long',

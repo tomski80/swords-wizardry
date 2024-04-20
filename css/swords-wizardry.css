@@ -377,7 +377,7 @@ h3 {
 }
 .swords-wizardry .items-list .item-controls {
   display: flex;
-  flex: 0 0 100px;
+  flex: 0 0 150px;
   justify-content: flex-end;
 }
 .swords-wizardry .items-list .item-controls a {
