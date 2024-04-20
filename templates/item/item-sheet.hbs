@@ -4,14 +4,14 @@
   <header class="sheet-header">
     <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
     <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder={{localize "SWORDS_WIZARDRY.Item.Item.Name"}}/></h1>
     </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="attributes">Attributes</a>
+    <a class="item" data-tab="description">{{localize "SWORDS_WIZARDRY.Item.Item.Tabs.Description"}}</a>
+    <a class="item" data-tab="attributes">{{localize "SWORDS_WIZARDRY.Item.Item.Tabs.Attributes"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}

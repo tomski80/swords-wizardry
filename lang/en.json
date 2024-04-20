@@ -1,5 +1,101 @@
 {
   "SWORDS_WIZARDRY": {
+    "NPCSheet": {
+      "Main": {
+        "Name": "Name",
+        "Special": "Special"
+      },
+      "Tabs": {
+        "Attacks": "Attacks",
+        "Description": "Description",
+        "Effects": "Effects"
+      }
+    },
+    "CharacterSheet": {
+      "Main": {
+        "Age": "Age",
+        "Ancestry": "Ancestry",
+        "AttributeBonuses": "Attribute Bonuses",
+        "AttributeScores": "Attribute Scores",
+        "Deity": "Deity",
+        "Name": "Name",
+        "ThievingSkills": "Thieving Skills"
+      },
+      "Combat": {
+        "RollNeededToHitAC": "Roll Needed To Hit Armor Class",
+        "Table": {
+          "Create": "Create Weapon",
+          "Delete": "Delete Weapon",
+          "Name": "Name",
+          "New": "New Weapon",
+          "RollFormula": "Roll Formula",
+          "Update": "Update Weapon",
+          "Weight": "Weight"
+        }
+      },
+      "Equipment": {
+        "Gems": "Gems",
+        "Gold": "Gold",
+        "Other": "Other",
+        "Table": {
+          "Create": "Create Item",
+          "Delete": "Delete Item",
+          "Name": "Name",
+          "New": "New Item",
+          "Quantity": "Quantity",
+          "Update": "Update Item",
+          "Weight": "Weight"
+        },
+        "Treasures": "Treasures"
+      },
+      "Features": {
+        "Table": {
+          "Create": "Create Feature",
+          "Delete": "Delete Feature",
+          "Name": "Name",
+          "New": "New Feature",
+          "Update": "Update Feature"
+        }
+      },
+      "Spells": {
+        "AddLVL": "Add Level {level} Spell",
+        "SpellSlots": "Spell Slots",
+        "Level": { "long": "Level", "abbr": "Lvl" },
+        "SpellLVL": "Level {level} Spells",
+        "Prepared": "Prepared",
+        "Table": {
+          "Create": "Create Spell",
+          "Delete": "Delete Spell",
+          "New": "New Spell",
+          "Update": "Update Spell"
+        }
+      },
+      "Tabs": {
+        "Combat": "Combat",
+        "Description": "Description",
+        "Equipment": "Equipment",
+        "Main": "Main",
+        "Spells": "Spells"
+      }
+    },
+    "Stats": {
+      "Alignment": "Alignment",
+      "ArmorClass": { "long": "Armor Class", "abbr": "AC" },
+      "Class": "Class",
+      "CL_XP": {
+        "long": "Challenge Level / Experience Points",
+        "abbr": "CL / XP"
+      },
+      "HitDie": { "long": "Hit Die", "abbr": "HD" },
+      "HitPoints": { "long": "Hit Points", "abbr": "HP" },
+      "Level": "Level",
+      "Morale": "Morale",
+      "Movement": "Movement",
+      "SavingThrow": { "long": "Saving Throw", "abbr": "Save" },
+      "WeightCarried": "Weight Carried",
+      "XP": { "long": "Experience Points", "abbr": "XP" },
+      "XPBonus": { "long": "Experience Point Bonus", "abbr": "XP Bonus" }
+    },
     "Ability": {
       "Str": { "long": "Strength", "abbr": "str" },
       "Con": { "long": "Constitution", "abbr": "con" },
@@ -11,13 +107,17 @@
     "Bonus": {
       "toHit": { "long": "Bonus to Hit", "abbr": "toHit" },
       "OpenDoor": { "long": "Open Door", "abbr": "opendoor" },
+      "CarryMod": { "long": "Carry Modificator", "abbr": "Carry Mod" },
       "Damage": { "long": "Damage Bonus", "abbr": "dmgbonus" },
       "toMissiles": { "long": "Bonus to Missiles", "abbr": "toMissiles" },
       "Armour": { "long": "Armour Bonus", "abbr": "ACbonus" },
       "HPBonus": { "long": "Hit Point Bonus", "abbr": "hpbonus" },
       "RaiseDeadChance": { "long": "Raise Dead Survival", "abbr": "respawn" },
       "AddLanguages": { "long": "Additional Languages", "abbr": "pluslan" },
-      "MaxSpecialHirelings": { "long": "Max # of Special Hirelings", "abbr": "numhire" }
+      "MaxSpecialHirelings": {
+        "long": "Max # of Special Hirelings",
+        "abbr": "numhire"
+      }
     },
     "thieving": {
       "climbwalls": { "long": "Climb Walls", "abbr": "clmbwalls" },
@@ -32,20 +132,61 @@
       "Item": "SwordsWizardry Item Sheet"
     },
     "Item": {
+      "Feature": {
+        "Name": "Name",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description",
+          "Effects": "Effects"
+        }
+      },
+      "Item": {
+        "Attributes": {
+          "RollFormula": "Roll Formula"
+        },
+        "Name": "Name",
+        "Quantity": "Quantity",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description"
+        },
+        "Weight": "Weight"
+      },
       "Spell": {
-        "SpellLVL": "Level {level} Spells",
-        "AddLVL": "Add LVL {level}"
+        "Name": "Name",
+        "Level": "Level",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description"
+        }
+      },
+      "Weapon": {
+        "Attributes": {
+          "RollFormula": "Roll Formula",
+          "DamageRollFormula": "Damage Roll Formula"
+        },
+        "Name": "Name",
+        "Quantity": "Quantity",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description"
+        },
+        "Weight": "Weight"
       }
     },
     "Effect": {
+      "Create": "Create Effect",
+      "Delete": "Delete Effect",
+      "Duration": "Duration",
+      "New": "New Effect",
       "Source": "Source",
       "Toggle": "Toggle Effect",
       "Temporary": "Temporary Effects",
       "Passive": "Passive Effects",
-      "Inactive": "Inactive Effects"
+      "Inactive": "Inactive Effects",
+      "Update": "Update Effect"
     }
   },
-
   "TYPES": {
     "Actor": {
       "character": "Character",
@@ -54,7 +195,14 @@
     "Item": {
       "item": "Item",
       "feature": "Feature",
-      "spell": "Spell"
+      "spell": "Spell",
+      "weapon": "Weapon"
     }
+  },
+  "New": {
+    "item": "New Item",
+    "feature": "New Feature",
+    "spell": "New Spell",
+    "weapon": "New Weapon"
   }
 }

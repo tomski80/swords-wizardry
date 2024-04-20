@@ -14,8 +14,8 @@ export function onManageActiveEffect(event, owner) {
     case 'create':
       return owner.createEmbeddedDocuments('ActiveEffect', [
         {
-          name: game.i18n.format('DOCUMENT.New', {
-            type: game.i18n.localize('DOCUMENT.ActiveEffect'),
+          name: game.i18n.format('SWORDS_WIZARDRY.Effect.New', {
+            type: game.i18n.localize('SWORDS_WIZARDRY.Effect.New'),
           }),
           icon: 'icons/svg/aura.svg',
           origin: owner.uuid,

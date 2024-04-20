@@ -1,0 +1,214 @@
+{
+  "SWORDS_WIZARDRY": {
+    "NPCSheet": {
+      "Main": {
+        "Name": "Name",
+        "Special": "Besonderheiten"
+      },
+      "Tabs": {
+        "Attacks": "Angriffe",
+        "Description": "Beschreibung",
+        "Effects": "Effekte"
+      }
+    },
+    "CharacterSheet": {
+      "Main": {
+        "Age": "Alter",
+        "Ancestry": "Abstammung",
+        "AttributeBonuses": "Attributsboni",
+        "AttributeScores": "Attribute",
+        "Deity": "Gottheit",
+        "Name": "Name",
+        "ThievingSkills": "Diebische Fertigkeiten"
+      },
+      "Combat": {
+        "RollNeededToHitAC": "Benötigtes Ergebnis um Rüstungsklasse zu treffen",
+        "Table": {
+          "Create": "Neue Waffe hinzufügen",
+          "Delete": "Waffe entfernen",
+          "Name": "Name",
+          "New": "Neue Waffe",
+          "RollFormula": "Trefferberechnung",
+          "Update": "Waffe ändern",
+          "Weight": "Gewicht"
+        }
+      },
+      "Equipment": {
+        "Gems": "Edelsteine",
+        "Gold": "Gold",
+        "Other": "Sonstiges",
+        "Table": {
+          "Create": "Neuen Gegenstand hinzufügen",
+          "Delete": "Gegenstand entfernen",
+          "Name": "Name",
+          "New": "Neuer Gegenstand",
+          "Quantity": "Menge",
+          "Update": "Gegenstand ändern",
+          "Weight": "Gewicht"
+        },
+        "Treasures": "Schätze"
+      },
+      "Features": {
+        "Table": {
+          "Create": "Neues Merkmal hinzufügen",
+          "Delete": "Merkmal entfernen",
+          "Name": "Name",
+          "New": "Neues Merkmal",
+          "Update": "Merkmal ändern"
+        }
+      },
+      "Spells": {
+        "AddLVL": "Zauber des {level}. Grades",
+        "SpellSlots": "Zaubergrade",
+        "Level": { "long": "Grad", "abbr": "Grd." },
+        "SpellLVL": "Zauber des {level}. Grades",
+        "Prepared": "Vorbereitet",
+        "Table": {
+          "Create": "Neuen Zauber hinzufügen",
+          "Delete": "Zauber entfernen",
+          "New": "Neuer Zauber",
+          "Update": "Zauber ändern"
+        }
+      },
+      "Tabs": {
+        "Combat": "Kampf",
+        "Description": "Beschreibung",
+        "Equipment": "Ausrüstung",
+        "Main": "Eigenschaften",
+        "Spells": "Zauber"
+      }
+    },
+    "Stats": {
+      "Alignment": "Gesinnung",
+      "ArmorClass": { "long": "Rüstungsklasse", "abbr": "RK" },
+      "Class": "Klasse",
+      "CL_XP": { "long": "Härtegrad / Erfahrungspunkte", "abbr": "HG / EP" },
+      "HitDie": { "long": "Trefferwürfel", "abbr": "TW" },
+      "HitPoints": { "long": "Trefferpunkte", "abbr": "TP" },
+      "Level": "Stufe",
+      "Morale": "Moral",
+      "Movement": "Bewegungsrate",
+      "SavingThrow": { "long": "Rettungswurf", "abbr": "RW" },
+      "WeightCarried": "Traglast",
+      "XP": { "long": "Erfahrungspunkte", "abbr": "EP" },
+      "XPBonus": { "long": "Erfahrungspunktebonus", "abbr": "EP Bonus" }
+    },
+    "Ability": {
+      "Str": { "long": "Stärke", "abbr": "ST" },
+      "Con": { "long": "Konstitution", "abbr": "KO" },
+      "Dex": { "long": "Geschicklichkeit", "abbr": "GE" },
+      "Int": { "long": "Intelligenz", "abbr": "IN" },
+      "Wis": { "long": "Weisheit", "abbr": "WE" },
+      "Cha": { "long": "Charisma", "abbr": "CH" }
+    },
+    "Bonus": {
+      "toHit": { "long": "Angriffsbonus", "abbr": "AB" },
+      "OpenDoor": { "long": "Türen aufbrechen", "abbr": "Tür aufbr." },
+      "CarryMod": { "long": "Traglast", "abbr": "Traglast" },
+      "Damage": { "long": "Schadensbonus", "abbr": "Sch-Bonus" },
+      "toMissiles": { "long": "Fernkampfbonus", "abbr": "Fk-Bonus" },
+      "Armour": { "long": "Rüstungsklasse-Bonus", "abbr": "RK-Bonus" },
+      "HPBonus": { "long": "Trefferpunkte-Bonus", "abbr": "TP-Bonus" },
+      "RaiseDeadChance": {
+        "long": "Überlebenschance bei Tote erwecken",
+        "abbr": "Überlebenschance"
+      },
+      "AddLanguages": {
+        "long": "Höchstzahl Sprachen",
+        "abbr": "Max. Sprachen"
+      },
+      "MaxSpecialHirelings": {
+        "long": "Höchstzahl Spezialisten",
+        "abbr": "Max. Spezialisten"
+      }
+    },
+    "thieving": {
+      "climbwalls": { "long": "Wände erklettern", "abbr": "Klettern" },
+      "delicatetask": {
+        "long": "Filigrane Aufgaben & Fallen",
+        "abbr": "Filigranes"
+      },
+      "hearsound": { "long": "Lauschen", "abbr": "Lauschen" },
+      "hideinshadow": { "long": "Im Schatten verstecken", "abbr": "Schatten" },
+      "movesilently": { "long": "Schleichen", "abbr": "Schleichen" },
+      "openlocks": { "long": "Schlösser knacken", "abbr": "Schlösser" }
+    },
+    "SheetLabels": {
+      "Actor": "SwordsWizardry Charakterbogen",
+      "Item": "SwordsWizardry Ausrüstungsbogen"
+    },
+    "Item": {
+      "Feature": {
+        "Name": "Name",
+        "Tabs": {
+          "Attributes": "Eigenschaften",
+          "Description": "Beschreibung",
+          "Effects": "Effekte"
+        }
+      },
+      "Item": {
+        "Attributes": {
+          "RollFormula": "Würfelberechnung"
+        },
+        "Name": "Name",
+        "Quantity": "Anzahl",
+        "Tabs": {
+          "Attributes": "Eigenschaften",
+          "Description": "Beschreibung"
+        },
+        "Weight": "Gewicht"
+      },
+      "Spell": {
+        "Name": "Name",
+        "Level": "Zaubergrad",
+        "Tabs": {
+          "Attributes": "Eigenschaften",
+          "Description": "Beschreibung"
+        }
+      },
+      "Weapon": {
+        "Attributes": {
+          "RollFormula": "Trefferberechnung",
+          "DamageRollFormula": "Schadensberechnung"
+        },
+        "Name": "Name",
+        "Quantity": "Anzahl",
+        "Tabs": {
+          "Attributes": "Eigenschaften",
+          "Description": "Beschreibung"
+        },
+        "Weight": "Gewicht"
+      }
+    },
+    "Effect": {
+      "Create": "Neuen Effekt hinzufügen",
+      "Delete": "Effekt löschen",
+      "Duration": "Dauer",
+      "New": "Neuer Effekt",
+      "Source": "Ursprung",
+      "Toggle": "Effekt de-/ aktivieren",
+      "Temporary": "Temporärer Effekt",
+      "Passive": "Passive Effekte",
+      "Inactive": "Inaktive Effekte",
+      "Update": "Effekt ändern"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "character": "SC",
+      "npc": "NSC"
+    },
+    "Item": {
+      "item": "Magischer Gegenstand",
+      "feature": "Merkmal",
+      "spell": "Zauber",
+      "weapon": "Waffe"
+    }
+  },
+  "New": {
+    "item": "Neuer Gegenstand",
+    "feature": "Neues Merkmal",
+    "spell": "Neuer Zauber",
+    "weapon": "Neue Waffe"
+  }
+}

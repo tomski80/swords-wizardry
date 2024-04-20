@@ -14,17 +14,17 @@
           "max": 5
         },
         "save": {
-          "value" : 0,
-          "min" : 0,
-          "max" : 20
+          "value": 0,
+          "min": 0,
+          "max": 20
         },
         "ac": {
-          "value" : 9,
-          "min" : -9,
-          "max" : 28
+          "value": 9,
+          "min": -9,
+          "max": 28
         },
-        "treasure" : {
-          "gold" : 0,
+        "treasure": {
+          "gold": 0,
           "gems": 0,
           "misc": 0
         },
@@ -43,20 +43,20 @@
         "xp-bonus": {
           "value": 0
         },
-        "Class" : "Class",
-        "Ancestry" : "Ancestry",
-        "Alignment" : "Alignment",
-        "Age" : 20,
-        "deity" : "Deity",
+        "Class": "Class",
+        "Ancestry": "Ancestry",
+        "Alignment": "Alignment",
+        "Age": 20,
+        "deity": "Deity",
         "move-rate": {
           "value": 0
         },
-        "carryweight" : {
-          "value" : 0
+        "carryweight": {
+          "value": 0
         },
-        "spellslots" : {
-          "value" : 0,
-          "max" : 0
+        "spellslots": {
+          "value": 0,
+          "max": 0
         }
       },
       "abilities": {
@@ -86,88 +86,88 @@
         }
       },
       "bonuses": {
-        "toHit" : {
-          "value" : 0
+        "toHit": {
+          "value": 0
         },
-        "OpenDoor" : {
-          "value" : 0
+        "OpenDoor": {
+          "value": 0
         },
-        "Damage" : {
-          "value" : 0
+        "Damage": {
+          "value": 0
         },
-        "Carry Mod" : {
-          "value" : 0
+        "Carry Mod": {
+          "value": 0
         },
-        "toMissiles" : {
-          "value" : 0
+        "toMissiles": {
+          "value": 0
         },
-        "Armour" : {
-          "value" : 0
+        "Armour": {
+          "value": 0
         },
-        "HPBonus" : {
-          "value" : 0
+        "HPBonus": {
+          "value": 0
         },
-        "RaiseDeadChance" : {
-          "value" : 0
+        "RaiseDeadChance": {
+          "value": 0
         },
-        "AddLanguages" : {
-          "value" : 0
+        "AddLanguages": {
+          "value": 0
         },
-        "MaxSpecialHirelings" : {
-          "value" : 0
-        } 
+        "MaxSpecialHirelings": {
+          "value": 0
+        }
       },
       "thieving": {
-        "climbwalls" : {
-          "value" : 0
+        "climbwalls": {
+          "value": 0
         },
-        "delicatetask" : {
-          "value" : 0
+        "delicatetask": {
+          "value": 0
         },
-        "hearsound" : {
-          "value" : 0
+        "hearsound": {
+          "value": 0
         },
-        "hideinshadow" : {
-          "value" : 0
+        "hideinshadow": {
+          "value": 0
         },
-        "movesilently" : {
-          "value" : 0
+        "movesilently": {
+          "value": 0
         },
-        "openlocks" : {
-          "value" : 0
+        "openlocks": {
+          "value": 0
         }
       },
       "tohitarmour": {
-        "-9" : 0,
-        "-8" : 0,
-        "-7" : 0,
-        "-6" : 0,
-        "-5" : 0,
-        "-4" : 0,
-        "-3" : 0,
-        "-2" : 0,
-        "-1" : 0,
-        "+0 " : 0,
-        "+1 " : 0,
-        "+2 " : 0,
-        "+3 " : 0,
-        "+4 " : 0,
-        "+5 " : 0,
-        "+6 " : 0,
-        "+7 " : 0,
-        "+8 " : 0,
-        "+9 " : 0
+        "-9": 0,
+        "-8": 0,
+        "-7": 0,
+        "-6": 0,
+        "-5": 0,
+        "-4": 0,
+        "-3": 0,
+        "-2": 0,
+        "-1": 0,
+        "+0 ": 0,
+        "+1 ": 0,
+        "+2 ": 0,
+        "+3 ": 0,
+        "+4 ": 0,
+        "+5 ": 0,
+        "+6 ": 0,
+        "+7 ": 0,
+        "+8 ": 0,
+        "+9 ": 0
       },
       "slots": {
-        "1": { "current": 0, "max": 0},
-        "2": { "current": 0, "max": 0},
-        "3": { "current": 0, "max": 0},
-        "4": { "current": 0, "max": 0},
-        "5": { "current": 0, "max": 0},
-        "6": { "current": 0, "max": 0},
-        "7": { "current": 0, "max": 0},
-        "8": { "current": 0, "max": 0},
-        "9": { "current": 0, "max": 0}
+        "1": { "current": 0, "max": 0 },
+        "2": { "current": 0, "max": 0 },
+        "3": { "current": 0, "max": 0 },
+        "4": { "current": 0, "max": 0 },
+        "5": { "current": 0, "max": 0 },
+        "6": { "current": 0, "max": 0 },
+        "7": { "current": 0, "max": 0 },
+        "8": { "current": 0, "max": 0 },
+        "9": { "current": 0, "max": 0 }
       }
     },
     "npc": {
@@ -177,34 +177,34 @@
       "morale": 0,
       "special": "",
       "move-rate": {
-        "value" : 12
+        "value": 12
       },
       "treasure": "",
       "xp": {
-        "value" : 100
+        "value": 100
       },
-      "alignment" : "Alignment",
-      "description" : "",
+      "alignment": "Alignment",
+      "description": "",
       "tohitarmour": {
-        "-9" : 0,
-        "-8" : 0,
-        "-7" : 0,
-        "-6" : 0,
-        "-5" : 0,
-        "-4" : 0,
-        "-3" : 0,
-        "-2" : 0,
-        "-1" : 0,
-        "+0" : 0,
-        "+1" : 0,
-        "+2" : 0,
-        "+3" : 0,
-        "+4" : 0,
-        "+5" : 0,
-        "+6" : 0,
-        "+7" : 0,
-        "+8" : 0,
-        "+9" : 0
+        "-9": 0,
+        "-8": 0,
+        "-7": 0,
+        "-6": 0,
+        "-5": 0,
+        "-4": 0,
+        "-3": 0,
+        "-2": 0,
+        "-1": 0,
+        "+0": 0,
+        "+1": 0,
+        "+2": 0,
+        "+3": 0,
+        "+4": 0,
+        "+5": 0,
+        "+6": 0,
+        "+7": 0,
+        "+8": 0,
+        "+9": 0
       }
     }
   },
@@ -226,7 +226,7 @@
       "quantity": 1,
       "weight": 0,
       "formula": "d20 + @toHit.v",
-      "hitdamage" : "1d4 + @Damage.v"
+      "hitdamage": "1d4 + @Damage.v"
     },
     "feature": {
       "templates": ["base"]
@@ -234,7 +234,7 @@
     "spell": {
       "templates": ["base"],
       "spellLevel": 1,
-      "prepared" : false
+      "prepared": false
     }
   }
 }

@@ -5,23 +5,23 @@
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
     <div class="header-fields">
       
-      <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h2>
+      <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder={{ localize 'SWORDS_WIZARDRY.CharacterSheet.Main.Name' }}/></h2>
       {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
       use both the "grid" and "grid-Ncol" class where "N" can be any number
       from 1 to 12 and will create that number of columns.  --}}
 <div class="resources grid grid-2col">
-      <h3 class="charname"><input name="system.attributes.class" type="text" value="{{system.attributes.class}}" placeholder="Class"></h3>
-      <h3 class="charname"><input name="system.attributes.ancestry" type="text" value="{{system.attributes.ancestry}}" placeholder="Ancestry"></h3>
-      <h3 class="charname"><input name="system.attributes.alignment" type="text" value="{{system.attributes.alignment}}" placeholder="Alignment"></h3>
-      <h3 class="charname"><input name="system.attributes.age" type="text" value="{{system.attributes.age}}" placeholder="Age"></h3>
-      <h3 class="charname"><input name="system.attributes.deity" type="text" value="{{system.attributes.deity}}" placeholder="Deity"></h3>
+      <h3 class="charname"><input name="system.attributes.class" type="text" value="{{system.attributes.class}}" placeholder={{ localize 'SWORDS_WIZARDRY.Stats.Class' }}></h3>
+      <h3 class="charname"><input name="system.attributes.ancestry" type="text" value="{{system.attributes.ancestry}}" placeholder={{ localize 'SWORDS_WIZARDRY.CharacterSheet.Main.Ancestry' }}></h3>
+      <h3 class="charname"><input name="system.attributes.alignment" type="text" value="{{system.attributes.alignment}}" placeholder={{ localize 'SWORDS_WIZARDRY.Stats.Alignment' }}></h3>
+      <h3 class="charname"><input name="system.attributes.age" type="text" value="{{system.attributes.age}}" placeholder={{ localize 'SWORDS_WIZARDRY.CharacterSheet.Main.Age' }}></h3>
+      <h3 class="charname"><input name="system.attributes.deity" type="text" value="{{system.attributes.deity}}" placeholder={{ localize 'SWORDS_WIZARDRY.CharacterSheet.Main.Deity' }}></h3>
       </div>
       <div class="resources grid grid-4col">
         {{!-- "flex-group-center" is also defined in the _grid.scss file
         and it will add a small amount of padding, a border, and will
         center all of its child elements content and text. --}}
         <div class="resource flex-group-center">
-          <label for="system.health.value" class="resource-label">Hit Points</label>
+          <label for="system.health.value" class="resource-label">{{ localize 'SWORDS_WIZARDRY.Stats.HitPoints.long' }}</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
           <span> / </span>
@@ -39,49 +39,49 @@
         </div>
 -->
         <div class="resource flex-group-center ">
-          <label for="system.save.value" class="resource-label">Saving Throw</label>
+          <label for="system.save.value" class="resource-label">{{ localize 'SWORDS_WIZARDRY.Stats.SavingThrow.long' }}</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.save.value" value="{{system.save.value}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.ac.value" class="resource-label">AC</label>
+          <label for="system.ac.value" class="resource-label">{{ localize 'SWORDS_WIZARDRY.Stats.ArmorClass.abbr' }}</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.ac.value" value="{{system.ac.value}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.attributes.xp.value" class="resource-label">XP</label>
+          <label for="system.attributes.xp.value" class="resource-label">{{ localize 'SWORDS_WIZARDRY.Stats.XP.abbr' }}</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.attributes.xp.value" value="{{system.attributes.xp.value}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.attributes.xp-bonus.value" class="resource-label">XP Bonus</label>
+          <label for="system.attributes.xp-bonus.value" class="resource-label">{{ localize 'SWORDS_WIZARDRY.Stats.XPBonus.abbr' }}</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.attributes.xp-bonus.value" value="{{system.attributes.xp-bonus.value}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.attributes.level.value" class="resource-label">Level</label>
+          <label for="system.attributes.level.value" class="resource-label">{{ localize 'SWORDS_WIZARDRY.Stats.Level' }}</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.attributes.level.value" value="{{system.attributes.level.value}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.attributes.move-rate.value" class="resource-label">Movement</label>
+          <label for="system.attributes.move-rate.value" class="resource-label">{{ localize 'SWORDS_WIZARDRY.Stats.Movement' }}</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.attributes.move-rate.value" value="{{system.attributes.move-rate.value}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.attributes.carryweight.value" class="resource-label">Weight Carried</label>
+          <label for="system.attributes.carryweight.value" class="resource-label">{{ localize 'SWORDS_WIZARDRY.Stats.WeightCarried' }}</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="system.attributes.carryweight.value" value="{{system.attributes.carryweight.value}}" data-dtype="Number"/>
           </div>
@@ -94,11 +94,11 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
-    <a class="item" data-tab="features">Main</a>
-    <a class="item" data-tab="weapons">Combat</a>
-    <a class="item" data-tab="items">Equipment</a>
-    <a class="item" data-tab="spells">Spells</a>
-    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="features">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Tabs.Main' }}</a>
+    <a class="item" data-tab="weapons">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Tabs.Combat' }}</a>
+    <a class="item" data-tab="items">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Tabs.Equipment' }}</a>
+    <a class="item" data-tab="spells">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Tabs.Spells' }}</a>
+    <a class="item" data-tab="description">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Tabs.Description' }}</a>
    <!-- <a class="item" data-tab="effects">Effects</a> -->
   </nav>
 
@@ -114,7 +114,7 @@
           use both the "grid" and "grid-Ncol" class where "N" can be any number
           from 1 to 12 and will create that number of columns.  --}}
           <div class="abilities flexcol">
-             <span class="resource-label"><h3>Attribute Scores</h3></span>
+             <span class="resource-label"><h3>{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Main.AttributeScores' }}</h3></span>
             {{#each system.abilities as |ability key|}}
             <div class="ability flexrow flex-group-center">
               <label for="system.abilities.{{key}}.value" class="resource-label flexlarge align-left" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
@@ -124,7 +124,7 @@
             </div>
             {{/each}}
             <hr>
-          <span class="resource-label"><h3>Attribute Bonuses</h3></span>
+          <span class="resource-label"><h3>{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Main.AttributeBonuses' }}</h3></span>
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
             {{#each system.bonuses as |bonus key|}}
             <div class="flexrow flex-group-center">
@@ -145,7 +145,7 @@
             <hr>
             <div class="grid-span-4"></div>
             <br><br>
-             <span class="resource-label"><h3>Thieving Skills</h3></span>
+             <span class="resource-label"><h3>{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Main.ThievingSkills' }}</h3></span>
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
             {{#each system.thieving as |skill key|}}
             <div class="flexrow flex-group-center">
@@ -174,17 +174,17 @@
 
     {{!-- Owned Items Tab --}}
     <div class="tab items" data-group="primary" data-tab="items">
-      <div>Treasure</div>
+      <div>{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Equipment.Treasures' }}</div>
       <div class="flexrow flex-group-center">
-        <label class="bonus-label  align-left" >Gold</label>
+        <label class="bonus-label  align-left" >{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Equipment.Gold' }}</label>
         <input class="bonus-value  align-left" type="text" name="system.treasure.gold" value="{{system.treasure.gold}}" data-dtype="Number"/>
       </div>  
       <div class="flexrow flex-group-center">
-        <label class="bonus-label  align-left" >Gems</label>
+        <label class="bonus-label  align-left" >{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Equipment.Gems' }}</label>
         <input class="bonus-value  align-left" type="text" name="system.treasure.gems" value="{{system.treasure.gems}}" data-dtype="Number"/>
       </div>
       <div class="flexrow flex-group-center">
-        <label class="bonus-label  align-left" >Other</label>
+        <label class="bonus-label  align-left" >{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Equipment.Other' }}</label>
         <input class="bonus-value  align-left" type="text" name="system.treasure.misc" value="{{system.treasure.misc}}" data-dtype="Number"/>
       </div>
        {{> "systems/swords-wizardry/templates/actor/parts/actor-items.hbs"}}
@@ -194,11 +194,11 @@
     <div class="tab spells" data-group="primary" data-tab="spells">
 
 
-      <div>Spells Slots</div>
+      <div>{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Spells.SpellSlots' }}</div>
        <div class="grid grid-9col align-center">
         {{#each system.slots as |slot key|}}
             <div class="grid-span-1 ">
-              <label for="{{key}}" class="resource-label flexlarge align-left" data-label="{{key}}">Lvl {{key}}</label>
+              <label for="{{key}}" class="resource-label flexlarge align-left" data-label="{{key}}">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Spells.Level.long' }} {{key}}</label>
               <div class="myborder">
               <input class="nomargin align-center" type="text" name="system.slots.{{key}}.current" value="{{slot.current}}" data-dtype="Number"/>
               <input class="nomargin align-center" type="text" name="system.slots.{{key}}.max" value="{{slot.max}}" data-dtype="Number"/>
