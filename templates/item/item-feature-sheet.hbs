@@ -2,15 +2,15 @@
   <header class="sheet-header">
     <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
     <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder={{localize "SWORDS_WIZARDRY.Item.Feature.Name"}}/></h1>
     </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="attributes">Attributes</a>
-    <a class="item" data-tab="effects">Effects</a>
+    <a class="item" data-tab="description">{{localize "SWORDS_WIZARDRY.Item.Feature.Tabs.Description"}}</a>
+    <a class="item" data-tab="attributes">{{localize "SWORDS_WIZARDRY.Item.Feature.Tabs.Attributes"}}</a>
+    <a class="item" data-tab="effects">{{localize "SWORDS_WIZARDRY.Item.Feature.Tabs.Effects"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}

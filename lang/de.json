@@ -138,9 +138,46 @@
       "Item": "SwordsWizardry Ausrüstungsbogen"
     },
     "Item": {
+      "Feature": {
+        "Name": "Name",
+        "Tabs": {
+          "Attributes": "Eigenschaften",
+          "Description": "Beschreibung",
+          "Effects": "Effekte"
+        }
+      },
+      "Item": {
+        "Attributes": {
+          "RollFormula": "Würfelberechnung"
+        },
+        "Name": "Name",
+        "Quantity": "Anzahl",
+        "Tabs": {
+          "Attributes": "Eigenschaften",
+          "Description": "Beschreibung"
+        },
+        "Weight": "Gewicht"
+      },
       "Spell": {
-        "SpellLVL": "Zauber des {level}. Grades",
-        "AddLVL": "Zauber des {level}. Grades"
+        "Name": "Name",
+        "Level": "Zaubergrad",
+        "Tabs": {
+          "Attributes": "Eigenschaften",
+          "Description": "Beschreibung"
+        }
+      },
+      "Weapon": {
+        "Attributes": {
+          "RollFormula": "Trefferberechnung",
+          "DamageRollFormula": "Schadensberechnung"
+        },
+        "Name": "Name",
+        "Quantity": "Anzahl",
+        "Tabs": {
+          "Attributes": "Eigenschaften",
+          "Description": "Beschreibung"
+        },
+        "Weight": "Gewicht"
       }
     },
     "Effect": {

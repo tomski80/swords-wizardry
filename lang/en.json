@@ -132,9 +132,46 @@
       "Item": "SwordsWizardry Item Sheet"
     },
     "Item": {
+      "Feature": {
+        "Name": "Name",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description",
+          "Effects": "Effects"
+        }
+      },
+      "Item": {
+        "Attributes": {
+          "RollFormula": "Roll Formula"
+        },
+        "Name": "Name",
+        "Quantity": "Quantity",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description"
+        },
+        "Weight": "Weight"
+      },
       "Spell": {
-        "SpellLVL": "Level {level} Spells",
-        "AddLVL": "Add LVL {level}"
+        "Name": "Name",
+        "Level": "Level",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description"
+        }
+      },
+      "Weapon": {
+        "Attributes": {
+          "RollFormula": "Roll Formula",
+          "DamageRollFormula": "Damage Roll Formula"
+        },
+        "Name": "Name",
+        "Quantity": "Quantity",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description"
+        },
+        "Weight": "Weight"
       }
     },
     "Effect": {
