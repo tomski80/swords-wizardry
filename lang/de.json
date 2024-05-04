@@ -62,6 +62,8 @@
         "SpellSlots": "Zaubergrade",
         "Level": { "long": "Grad", "abbr": "Grd." },
         "SpellLVL": "Zauber des {level}. Grades",
+        "Remaining": "Verfügbar",
+        "Total": "Gesamt",
         "Prepared": "Vorbereitet",
         "Table": {
           "Create": "Neuen Zauber hinzufügen",
