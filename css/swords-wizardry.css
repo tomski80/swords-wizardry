@@ -252,6 +252,7 @@
 }
 
 .double-border {
+  border: #464646;
   border-style: double;
 }
 
