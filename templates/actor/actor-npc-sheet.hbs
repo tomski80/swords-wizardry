@@ -4,7 +4,7 @@
   <header class="sheet-header">
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
     <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder={{localize 'SWORDS_WIZARDRY.NPCSheet.Main.Name'}}/></h1>
+      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder={{localize 'SWORDS_WIZARDRY.NPCSheet.Main.Name'}}></h1>
       {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
       use both the "grid" and "grid-Ncol" class where "N" can be any number
       from 1 to 12 and will create that number of columns.  --}}
@@ -42,14 +42,14 @@
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.hd" class="resource-label">{{localize 'SWORDS_WIZARDRY.Stats.Movement'}}</label>
+          <label for="system.hd" class="resource-label">{{localize 'SWORDS_WIZARDRY.Stats.HitDie.long'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.hd" value="{{system.hd}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.move-rate" class="resource-label">{{localize 'SWORDS_WIZARDRY.NPCSheet.Main.Name'}}</label>
+          <label for="system.move-rate" class="resource-label">{{localize 'SWORDS_WIZARDRY.Stats.Movement'}}</label>
           <div class="resource-content flexrow flex-center flex-between">
             <input type="text" name="system.move-rate.value" value="{{system.move-rate.value}}" data-dtype="Number"/>
           </div>
