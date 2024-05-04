@@ -59,6 +59,12 @@
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.grid-19col {
+  grid-column: span 19/span 19;
+  grid-template-columns: repeat(19, minmax(0, 1fr));
+  gap: 0;
+}
+
 // Grid offset.
 .grid-row-start-2 { grid-row-start: 2 }
 .grid-row-start-3 { grid-row-start: 3 }
