@@ -60,12 +60,6 @@
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
-.grid-10col-n {
-  grid-column: span 10/span 10;
-  grid-template-columns: repeat(10, minmax(0, 1fr));
-  gap: 0;
-}
-
 .grid-11col {
   grid-column: span 11/span 11;
   grid-template-columns: repeat(11, minmax(0, 1fr));
@@ -80,6 +74,50 @@
   grid-column: span 19/span 19;
   grid-template-columns: repeat(19, minmax(0, 1fr));
   gap: 0;
+}
+
+.grid-row-start-2 {
+  grid-row-start: 2;
+}
+
+.grid-row-start-3 {
+  grid-row-start: 3;
+}
+
+.grid-row-start-4 {
+  grid-row-start: 4;
+}
+
+.grid-row-start-5 {
+  grid-row-start: 5;
+}
+
+.grid-row-start-6 {
+  grid-row-start: 6;
+}
+
+.grid-row-start-7 {
+  grid-row-start: 7;
+}
+
+.grid-row-start-8 {
+  grid-row-start: 8;
+}
+
+.grid-row-start-9 {
+  grid-row-start: 9;
+}
+
+.grid-row-start-10 {
+  grid-row-start: 10;
+}
+
+.grid-row-start-11 {
+  grid-row-start: 11;
+}
+
+.grid-row-start-12 {
+  grid-row-start: 12;
 }
 
 .grid-start-2 {
@@ -170,10 +208,6 @@
   grid-column-end: span 12;
 }
 
-.grid-span-18 {
-  grid-column-end: span 18;
-}
-
 .flex-group-center,
 .flex-group-left,
 .flex-group-right {
@@ -201,7 +235,7 @@
 }
 
 .flexlarge {
-  flex: 3;
+  flex: 2;
 }
 
 .align-left {
@@ -219,22 +253,19 @@
   text-align: center;
 }
 
-.nomargin {
-  margin: 0;
-  padding: 1;
+.align-self-center {
+  align-self: center;
 }
 
-.myborder {
+.double-border {
   border: #464646;
-  border-style:double;
+  border-style: double;
 }
 
 /* Styles limited to swords-wizardry sheets */
-/* font-family: "Roboto", sans-serif; */
 .swords-wizardry .item-form {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 .swords-wizardry .sheet-header {
   flex: 0 auto;
   overflow: hidden;
@@ -245,53 +276,24 @@
   margin-bottom: 10px;
 }
 .swords-wizardry .sheet-header .profile-img {
-  flex: 0 100px;
+  flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
-  justify-content: flex-end;
 }
 .swords-wizardry .sheet-header .header-fields {
   flex: 1;
 }
-.swords-wizardry .sheet-header h2.charname {
-  height: 30px;
-  width:  100%;
+.swords-wizardry .sheet-header h1.charname {
+  height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
-
-.swords-wizardry .sheet-header h2.charname input {
+.swords-wizardry .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-
-.swords-wizardry .sheet-header h3.charname {
-  height: 30px;
-  width: 100%;
-  padding: 0px;
-  margin: 2px;
-  border-bottom: 0;
-}
-
-input[type=checkbox]
-{
-  /* Double-sized Checkboxes */
-  -ms-transform: scale(0.7); /* IE */
-  -moz-transform: scale(0.7); /* FF */
-  -webkit-transform: scale(0.7); /* Safari and Chrome */
-  -o-transform: scale(0.7); /* Opera */
-  transform: scale(0.7);
-}
-
-h3 {
-  font-size: 14px;
-  font-weight: bold;
-  font-style: italic;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .swords-wizardry .sheet-tabs {
   flex: 0;
 }
@@ -306,31 +308,11 @@ h3 {
 .swords-wizardry .tox .tox-edit-area {
   padding: 0 8px;
 }
-
 .swords-wizardry .resource-label {
   font-weight: bold;
 }
-
-.swords-wizardry .resource-value {
-  height: 16px;
-  margin-top: 3px;
-  font-size: 14px;
-}
-
-.swords-wizardry .bonus-label {
-  font-size: 12px;
-}
-
-.swords-wizardry .bonus-value {
-  height: 16px;
-  margin-top: 3px;
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-
-
 .swords-wizardry .items-header {
-  height: 20px;
+  height: 28px;
   margin: 2px 0;
   padding: 0;
   align-items: center;
@@ -377,7 +359,7 @@ h3 {
 }
 .swords-wizardry .items-list .item-controls {
   display: flex;
-  flex: 0 0 150px;
+  flex: 0 0 100px;
   justify-content: flex-end;
 }
 .swords-wizardry .items-list .item-controls a {
@@ -441,3 +423,5 @@ h3 {
 .swords-wizardry .effects .item .effect-controls {
   border: none;
 }
+
+/*# sourceMappingURL=swords-wizardry.css.map */

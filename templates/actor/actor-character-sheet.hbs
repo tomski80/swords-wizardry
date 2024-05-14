@@ -5,7 +5,7 @@
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
     <div class="header-fields">
       
-      <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder={{ localize 'SWORDS_WIZARDRY.CharacterSheet.Main.Name' }}/></h2>
+      <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder={{ localize 'SWORDS_WIZARDRY.CharacterSheet.Main.Name' }}></h2>
       {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
       use both the "grid" and "grid-Ncol" class where "N" can be any number
       from 1 to 12 and will create that number of columns.  --}}
@@ -195,16 +195,27 @@
 
 
       <div>{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Spells.SpellSlots' }}</div>
-       <div class="grid grid-9col align-center">
-        {{#each system.slots as |slot key|}}
-            <div class="grid-span-1 ">
-              <label for="{{key}}" class="resource-label flexlarge align-left" data-label="{{key}}">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Spells.Level.long' }} {{key}}</label>
-              <div class="myborder">
-              <input class="nomargin align-center" type="text" name="system.slots.{{key}}.current" value="{{slot.current}}" data-dtype="Number"/>
-              <input class="nomargin align-center" type="text" name="system.slots.{{key}}.max" value="{{slot.max}}" data-dtype="Number"/>
+       <div class="grid grid-11col align-center">
+          <div class="grid-span-2">
+            <label class="resource-label align-left">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Spells.Level.long' }}</label>
+          </div>
+          <div class="grid-span-2 grid-row-start-2 align-self-center">
+            <label class="resource-label align-left align-self-center">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Spells.Remaining' }}</label>
+          </div>
+          <div class="grid-span-2 grid-row-start-3 align-self-center">
+            <label class="resource-label align-left">{{ localize 'SWORDS_WIZARDRY.CharacterSheet.Spells.Total' }}</label>
+          </div>
+          {{#each system.slots as |slot key|}}
+              <div class="grid-span-1">
+                <label for="{{key}}" class="resource-label flexlarge align-left" data-label="{{key}}">{{key}}</label>
               </div>
-            </div>
-        {{/each}}
+              <div class="grid-span-1 grid-row-start-2 double-border">
+                <input class="nomargin align-center" type="text" name="system.slots.{{key}}.current" value="{{slot.current}}" data-dtype="Number"/>
+              </div>
+              <div class="grid-span-1 grid-row-start-3 double-border">
+                <input class="nomargin align-center" type="text" name="system.slots.{{key}}.max" value="{{slot.max}}" data-dtype="Number"/>
+              </div>
+          {{/each}}
     </div>
 
       {{> "systems/swords-wizardry/templates/actor/parts/actor-spells.hbs"}}

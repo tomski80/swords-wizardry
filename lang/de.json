@@ -19,16 +19,16 @@
         "AttributeScores": "Attribute",
         "Deity": "Gottheit",
         "Name": "Name",
-        "ThievingSkills": "Diebische Fertigkeiten"
+        "ThievingSkills": "Diebische Fähigkeiten"
       },
       "Combat": {
-        "RollNeededToHitAC": "Benötigtes Ergebnis um Rüstungsklasse zu treffen",
+        "RollNeededToHitAC": "Erforderlicher Angriffswurf",
         "Table": {
           "Create": "Neue Waffe hinzufügen",
           "Delete": "Waffe entfernen",
           "Name": "Name",
           "New": "Neue Waffe",
-          "RollFormula": "Trefferberechnung",
+          "RollFormula": "Angriffswurf",
           "Update": "Waffe ändern",
           "Weight": "Gewicht"
         }
@@ -58,10 +58,12 @@
         }
       },
       "Spells": {
-        "AddLVL": "Zauber des {level}. Grades",
+        "AddLVL": "Neuer Zauber",
         "SpellSlots": "Zaubergrade",
         "Level": { "long": "Grad", "abbr": "Grd." },
         "SpellLVL": "Zauber des {level}. Grades",
+        "Remaining": "Verfügbar",
+        "Total": "Gesamt",
         "Prepared": "Vorbereitet",
         "Table": {
           "Create": "Neuen Zauber hinzufügen",
