@@ -130,7 +130,9 @@
         },
         "openlocks": {
           "value": 0
-        },
+        }
+      },
+      "optionalSkills": {
         "ambush": {
           "value": 0
         },

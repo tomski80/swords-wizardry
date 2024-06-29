@@ -127,7 +127,9 @@
       "hearsound": { "long": "Hear Sound", "abbr": "hear" },
       "hideinshadow": { "long": "Hide in Shadows", "abbr": "hide" },
       "movesilently": { "long": "Move Silently", "abbr": "movesilent" },
-      "openlocks": { "long": "Open Locks", "abbr": "openlocks" },
+      "openlocks": { "long": "Open Locks", "abbr": "openlocks" }
+    },
+    "optionalSkills": {
       "ambush": { "long": "Ambush", "abbr": "ambush" },
       "detectillusions": { "long": "Detect Illusions", "abbr": "detectillusions" },
       "detectpitssnares": { "long": "Detect Pits / Snares", "abbr": "detectpitssnares" },

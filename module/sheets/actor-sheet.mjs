@@ -40,7 +40,8 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     const context = super.getData();
 
     context.useAscendingAC = game.settings.get('swords-wizardry', 'useAscendingAC');
-    console.log(context)
+    context.includeOptionalSkills = game.settings.get('swords-wizardry', 'includeOptionalSkills');
+    console.log(context);
 
     // Use a safe clone of the actor data for further operations.
     const actorData = context.data;
@@ -92,6 +93,10 @@ export class SwordsWizardryActorSheet extends ActorSheet {
 
     for (let [k, v] of Object.entries(context.system.thieving)) {
       v.label = game.i18n.localize(CONFIG.SWORDS_WIZARDRY.thieving[k]) ?? k;
+    }
+
+    for (let [k, v] of Object.entries(context.system.optionalSkills)) {
+      v.label = game.i18n.localize(CONFIG.SWORDS_WIZARDRY.optionalSkills[k]) ?? k;
     }
   }
 

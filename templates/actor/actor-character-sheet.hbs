@@ -144,6 +144,15 @@
               <div class="grid-span-4"></div> <div class="grid-span-4"></div>
             </div>
             {{/each}}
+            {{#if includeOptionalSkills }}
+            {{#each system.optionalSkills as |skill key|}}
+            <div class="flexrow flex-group-center">
+              <label for="system.optionalSkills.{{skill}}.value" class="bonus-label flexlarge align-left" data-label="{{skill.label}}">{{skill.label}}</label>
+              <input class="bonus-value" type="text" name="system.optionalSkills.{{key}}.value" value="{{skill.value}}" data-dtype="Number"/>
+              <div class="grid-span-4"></div> <div class="grid-span-4"></div>
+            </div>
+            {{/each}}
+            {{/if }}
       </aside>
      </section>
 

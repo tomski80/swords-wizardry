@@ -133,7 +133,9 @@
       "hearsound": { "long": "Lauschen", "abbr": "Lauschen" },
       "hideinshadow": { "long": "Im Schatten verstecken", "abbr": "Schatten" },
       "movesilently": { "long": "Schleichen", "abbr": "Schleichen" },
-      "openlocks": { "long": "Schlösser knacken", "abbr": "Schlösser" },
+      "openlocks": { "long": "Schlösser knacken", "abbr": "Schlösser" }
+    },
+    "optionalSkills": {
       "ambush": { "long": "Ambush", "abbr": "ambush" },
       "detectillusions": { "long": "Detect Illusions", "abbr": "detectillusions" },
       "detectpitssnares": { "long": "Detect Pits / Snares", "abbr": "detectpitssnares" },
