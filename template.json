@@ -238,6 +238,8 @@
       "templates": ["base", "buyable"],
       "quantity": 1,
       "weight": 0,
+      "range": 0,
+      "rateOfFire": 1,
       "formula": "d20 + @toHit.v",
       "hitdamage": "1d4 + @Damage.v"
     },

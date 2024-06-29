@@ -176,10 +176,13 @@
       "Weapon": {
         "Attributes": {
           "RollFormula": "Trefferberechnung",
-          "DamageRollFormula": "Schadensberechnung"
+          "DamageRollFormula": "Schadensberechnung",
+          "Range": "Range",
+          "RateOfFire": "Rate Of Fire"
         },
         "Name": "Name",
         "Quantity": "Anzahl",
+        "Gold": "Gold",
         "Tabs": {
           "Attributes": "Eigenschaften",
           "Description": "Beschreibung"

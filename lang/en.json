@@ -171,7 +171,9 @@
       "Weapon": {
         "Attributes": {
           "RollFormula": "Roll Formula",
-          "DamageRollFormula": "Damage Roll Formula"
+          "DamageRollFormula": "Damage Roll Formula",
+          "Range": "Range",
+          "RateOfFire": "Rate Of Fire"
         },
         "Name": "Name",
         "Quantity": "Quantity",
