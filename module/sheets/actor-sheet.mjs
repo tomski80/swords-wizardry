@@ -41,7 +41,6 @@ export class SwordsWizardryActorSheet extends ActorSheet {
 
     context.useAscendingAC = game.settings.get('swords-wizardry', 'useAscendingAC');
     context.includeOptionalSkills = game.settings.get('swords-wizardry', 'includeOptionalSkills');
-    console.log(context);
 
     // Use a safe clone of the actor data for further operations.
     const actorData = context.data;
