@@ -135,6 +135,21 @@
         },
         "openlocks": {
           "value": 0
+        },
+        "ambush": {
+          "value": 0
+        },
+        "detectillusions": {
+          "value": 0
+        },
+        "detectpitssnares": {
+          "value": 0
+        },
+        "oratoryloresong": {
+          "value": 0
+        },
+        "rage": {
+          "value": 0
         }
       },
       "tohitarmour": {

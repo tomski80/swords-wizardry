@@ -43,4 +43,9 @@ SWORDS_WIZARDRY.thieving = {
   hideinshadow: 'SWORDS_WIZARDRY.thieving.hideinshadow.long',
   movesilently: 'SWORDS_WIZARDRY.thieving.movesilently.long',
   openlocks: 'SWORDS_WIZARDRY.thieving.openlocks.long',
+  ambush: 'SWORDS_WIZARDRY.thieving.ambush.long',
+  detectillusions: 'SWORDS_WIZARDRY.thieving.detectillusions.long',
+  detectpitssnares: 'SWORDS_WIZARDRY.thieving.detectpitssnares.long',
+  oratoryloresong: 'SWORDS_WIZARDRY.thieving.oratoryloresong.long',
+  rage: 'SWORDS_WIZARDRY.thieving.rage.long',
 }

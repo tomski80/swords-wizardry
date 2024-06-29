@@ -133,7 +133,12 @@
       "hearsound": { "long": "Lauschen", "abbr": "Lauschen" },
       "hideinshadow": { "long": "Im Schatten verstecken", "abbr": "Schatten" },
       "movesilently": { "long": "Schleichen", "abbr": "Schleichen" },
-      "openlocks": { "long": "Schlösser knacken", "abbr": "Schlösser" }
+      "openlocks": { "long": "Schlösser knacken", "abbr": "Schlösser" },
+      "ambush": { "long": "Ambush", "abbr": "ambush" },
+      "detectillusions": { "long": "Detect Illusions", "abbr": "detectillusions" },
+      "detectpitssnares": { "long": "Detect Pits / Snares", "abbr": "detectpitssnares" },
+      "oratoryloresong": { "long": "Oratory / Lore / Song", "abbr": "oratoryloresong" },
+      "rage": { "long": "Chance to Enter Rage", "abbr": "rage" }
     },
     "SheetLabels": {
       "Actor": "SwordsWizardry Charakterbogen",

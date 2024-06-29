@@ -127,7 +127,12 @@
       "hearsound": { "long": "Hear Sound", "abbr": "hear" },
       "hideinshadow": { "long": "Hide in Shadows", "abbr": "hide" },
       "movesilently": { "long": "Move Silently", "abbr": "movesilent" },
-      "openlocks": { "long": "Open Locks", "abbr": "openlocks" }
+      "openlocks": { "long": "Open Locks", "abbr": "openlocks" },
+      "ambush": { "long": "Ambush", "abbr": "ambush" },
+      "detectillusions": { "long": "Detect Illusions", "abbr": "detectillusions" },
+      "detectpitssnares": { "long": "Detect Pits / Snares", "abbr": "detectpitssnares" },
+      "oratoryloresong": { "long": "Oratory / Lore / Song", "abbr": "oratoryloresong" },
+      "rage": { "long": "Chance to Enter Rage", "abbr": "rage" }
     },
     "SheetLabels": {
       "Actor": "SwordsWizardry Actor Sheet",

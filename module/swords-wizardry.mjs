@@ -1,3 +1,7 @@
+// Import settings.
+
+import { registerSystemSettings } from './settings.mjs';
+
 // Import document classes.
 import { SwordsWizardryActor } from './documents/actor.mjs';
 import { SwordsWizardryItem } from './documents/item.mjs';
@@ -12,7 +16,11 @@ import { SWORDS_WIZARDRY } from './helpers/config.mjs';
 /*  Init Hook                                   */
 /* -------------------------------------------- */
 
-Hooks.once('init', function () {
+Hooks.once('init', function() {
+
+  // Register settings first.
+  registerSystemSettings();
+
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.swordswizardry = {
@@ -63,7 +71,7 @@ Hooks.once('init', function () {
 /* -------------------------------------------- */
 
 // If you need to add Handlebars helpers, here is a useful example:
-Handlebars.registerHelper('toLowerCase', function (str) {
+Handlebars.registerHelper('toLowerCase', function(str) {
   return str.toLowerCase();
 });
 
@@ -71,7 +79,7 @@ Handlebars.registerHelper('toLowerCase', function (str) {
 /*  Ready Hook                                  */
 /* -------------------------------------------- */
 
-Hooks.once('ready', function () {
+Hooks.once('ready', function() {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on('hotbarDrop', (bar, data, slot) => createItemMacro(data, slot));
 });
