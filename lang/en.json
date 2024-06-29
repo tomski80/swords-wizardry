@@ -153,6 +153,7 @@
         },
         "Name": "Name",
         "Quantity": "Quantity",
+        "Gold": "Gold",
         "Tabs": {
           "Attributes": "Attributes",
           "Description": "Description"
@@ -174,6 +175,7 @@
         },
         "Name": "Name",
         "Quantity": "Quantity",
+        "Gold": "Gold",
         "Tabs": {
           "Attributes": "Attributes",
           "Description": "Description"

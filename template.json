@@ -228,16 +228,19 @@
     "templates": {
       "base": {
         "description": ""
+      },
+      "buyable": {
+        "gold": 0
       }
     },
     "item": {
-      "templates": ["base"],
+      "templates": ["base", "buyable"],
       "quantity": 1,
       "weight": 0,
       "formula": "d6"
     },
     "weapon": {
-      "templates": ["base"],
+      "templates": ["base", "buyable"],
       "quantity": 1,
       "weight": 0,
       "formula": "d20 + @toHit.v",
