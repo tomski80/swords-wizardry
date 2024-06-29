@@ -177,8 +177,8 @@
         "Attributes": {
           "RollFormula": "Trefferberechnung",
           "DamageRollFormula": "Schadensberechnung",
-          "Range": "Range",
-          "RateOfFire": "Rate Of Fire"
+          "Range": "Reichweite",
+          "RateOfFire": "Feuerrate"
         },
         "Name": "Name",
         "Quantity": "Anzahl",
