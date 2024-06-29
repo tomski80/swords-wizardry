@@ -11,7 +11,7 @@ export function registerSystemSettings() {
     default: false
   });
 
-  // Include thief-like class skils from Swords & Wizardry: Options
+  // Include thief-like class skils from the Swords & Wizardry Book of Options
   game.settings.register("swords-wizardry", "includeOptionalSkills", {
     name: "Include class skills from Swords & Wizardry: Options",
     scope: "world",
