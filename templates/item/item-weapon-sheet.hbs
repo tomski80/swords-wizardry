@@ -3,7 +3,7 @@
     <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
     <div class="header-fields">
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder={{localize "SWORDS_WIZARDRY.Item.Weapon.Name"}}/></h1>
-      <div class="grid grid-2col">
+      <div class="grid grid-3col">
         <div class="resource">
           <label class="resource-label">{{localize "SWORDS_WIZARDRY.Item.Weapon.Quantity"}}</label>
           <input type="text" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
@@ -11,6 +11,10 @@
         <div class="resource">
           <label class="resource-label">{{localize "SWORDS_WIZARDRY.Item.Weapon.Weight"}}</label>
           <input type="text" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "SWORDS_WIZARDRY.Item.Weapon.Gold"}}</label>
+          <input type="text" name="system.gold" value="{{system.gold}}" data-dtype="Number"/>
         </div>
       </div>
     </div>
@@ -44,6 +48,15 @@
         <input type="text" name="system.hitdamage" value="{{system.hitdamage}}" data-dtype="String"/>
       </div>
 
+      <div class="resource">
+        <label class="resource-label">{{localize "SWORDS_WIZARDRY.Item.Weapon.Attributes.Range"}}</label>
+        <input type="text" name="system.range" value="{{system.range}}" data-dtype="Number"/>
+      </div>
+
+      <div class="resource">
+        <label class="resource-label">{{localize "SWORDS_WIZARDRY.Item.Weapon.Attributes.RateOfFire"}}</label>
+        <input type="text" name="system.rateOfFire" value="{{system.rateOfFire}}" data-dtype="Number"/>
+      </div>
     </div>
   </section>
 </form>

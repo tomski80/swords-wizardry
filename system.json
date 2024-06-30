@@ -20,7 +20,7 @@
       "thumbnail": ""
     }
   ],
-  "version": "1.1.3",
+  "version": "1.2.0",
   "compatibility": {
     "minimum": 11,
     "verified": "11.313"
@@ -42,11 +42,11 @@
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "https://github.com/tomski80/swords-wizardry/releases/download/v1.1.3/system.json",
-  "download": "https://github.com/tomski80/swords-wizardry/releases/download/v1.1.3/swords-wizardry.zip",
+  "manifest": "https://github.com/tomski80/swords-wizardry/releases/download/v1.2.0/system.json",
+  "download": "https://github.com/tomski80/swords-wizardry/releases/download/v1.2.0/swords-wizardry.zip",
   "background": "",
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power"
+  "secondaryTokenAttribute": "ac"
 }

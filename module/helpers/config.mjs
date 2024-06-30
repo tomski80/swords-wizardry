@@ -34,7 +34,7 @@ SWORDS_WIZARDRY.bonuses = {
   RaiseDeadChance: 'SWORDS_WIZARDRY.Bonus.RaiseDeadChance.long',
   AddLanguages: 'SWORDS_WIZARDRY.Bonus.AddLanguages.long',
   MaxSpecialHirelings: 'SWORDS_WIZARDRY.Bonus.MaxSpecialHirelings.long'
-}
+};
 
 SWORDS_WIZARDRY.thieving = {
   climbwalls: 'SWORDS_WIZARDRY.thieving.climbwalls.long',
@@ -42,5 +42,13 @@ SWORDS_WIZARDRY.thieving = {
   hearsound: 'SWORDS_WIZARDRY.thieving.hearsound.long',
   hideinshadow: 'SWORDS_WIZARDRY.thieving.hideinshadow.long',
   movesilently: 'SWORDS_WIZARDRY.thieving.movesilently.long',
-  openlocks: 'SWORDS_WIZARDRY.thieving.openlocks.long',
-}
+  openlocks: 'SWORDS_WIZARDRY.thieving.openlocks.long'
+};
+
+SWORDS_WIZARDRY.optionalSkills = {
+  ambush: 'SWORDS_WIZARDRY.optionalSkills.ambush.long',
+  detectillusions: 'SWORDS_WIZARDRY.optionalSkills.detectillusions.long',
+  detectpitssnares: 'SWORDS_WIZARDRY.optionalSkills.detectpitssnares.long',
+  oratoryloresong: 'SWORDS_WIZARDRY.optionalSkills.oratoryloresong.long',
+  rage: 'SWORDS_WIZARDRY.optionalSkills.rage.long'
+};

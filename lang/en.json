@@ -31,6 +31,15 @@
           "RollFormula": "Roll Formula",
           "Update": "Update Weapon",
           "Weight": "Weight"
+        },
+        "ArmorTable": {
+          "Create": "Create Armor",
+          "Delete": "Delete Armor",
+          "Name": "Name",
+          "New": "New Armor",
+          "EffectOnAC": "Effect on AC",
+          "Update": "Update Armor",
+          "Weight": "Weight"
         }
       },
       "Equipment": {
@@ -129,6 +138,13 @@
       "movesilently": { "long": "Move Silently", "abbr": "movesilent" },
       "openlocks": { "long": "Open Locks", "abbr": "openlocks" }
     },
+    "optionalSkills": {
+      "ambush": { "long": "Ambush", "abbr": "ambush" },
+      "detectillusions": { "long": "Detect Illusions", "abbr": "detectillusions" },
+      "detectpitssnares": { "long": "Detect Pits / Snares", "abbr": "detectpitssnares" },
+      "oratoryloresong": { "long": "Oratory / Lore / Song", "abbr": "oratoryloresong" },
+      "rage": { "long": "Chance to Enter Rage", "abbr": "rage" }
+    },
     "SheetLabels": {
       "Actor": "SwordsWizardry Actor Sheet",
       "Item": "SwordsWizardry Item Sheet"
@@ -142,12 +158,26 @@
           "Effects": "Effects"
         }
       },
+      "Armor": {
+        "Attributes": {
+          "EffectOnAC": "Effect on AC"
+        },
+        "Name": "Name",
+        "Quantity": "Quantity",
+        "Gold": "Gold",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description"
+        },
+        "Weight": "Weight"
+      },
       "Item": {
         "Attributes": {
           "RollFormula": "Roll Formula"
         },
         "Name": "Name",
         "Quantity": "Quantity",
+        "Gold": "Gold",
         "Tabs": {
           "Attributes": "Attributes",
           "Description": "Description"
@@ -165,10 +195,13 @@
       "Weapon": {
         "Attributes": {
           "RollFormula": "Roll Formula",
-          "DamageRollFormula": "Damage Roll Formula"
+          "DamageRollFormula": "Damage Roll Formula",
+          "Range": "Range",
+          "RateOfFire": "Rate Of Fire"
         },
         "Name": "Name",
         "Quantity": "Quantity",
+        "Gold": "Gold",
         "Tabs": {
           "Attributes": "Attributes",
           "Description": "Description"
@@ -198,6 +231,7 @@
       "item": "Item",
       "feature": "Feature",
       "spell": "Spell",
+      "armor": "Armor",
       "weapon": "Weapon"
     }
   },

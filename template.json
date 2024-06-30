@@ -8,11 +8,6 @@
           "min": 0,
           "max": 10
         },
-        "power": {
-          "value": 5,
-          "min": 0,
-          "max": 5
-        },
         "save": {
           "value": 0,
           "min": 0,
@@ -137,6 +132,23 @@
           "value": 0
         }
       },
+      "optionalSkills": {
+        "ambush": {
+          "value": 0
+        },
+        "detectillusions": {
+          "value": 0
+        },
+        "detectpitssnares": {
+          "value": 0
+        },
+        "oratoryloresong": {
+          "value": 0
+        },
+        "rage": {
+          "value": 0
+        }
+      },
       "tohitarmour": {
         "-9": 0,
         "-8": 0,
@@ -209,22 +221,31 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell", "weapon"],
+    "types": ["item", "feature", "spell", "armor", "weapon"],
     "templates": {
       "base": {
         "description": ""
+      },
+      "buyable": {
+        "gold": 0,
+        "weight": 0
       }
     },
-    "item": {
-      "templates": ["base"],
+    "armor": {
+      "templates": ["base", "buyable"],
       "quantity": 1,
-      "weight": 0,
+      "effectOnAC": 0
+    },
+    "item": {
+      "templates": ["base", "buyable"],
+      "quantity": 1,
       "formula": "d6"
     },
     "weapon": {
-      "templates": ["base"],
+      "templates": ["base", "buyable"],
       "quantity": 1,
-      "weight": 0,
+      "range": 0,
+      "rateOfFire": 1,
       "formula": "d20 + @toHit.v",
       "hitdamage": "1d4 + @Damage.v"
     },
