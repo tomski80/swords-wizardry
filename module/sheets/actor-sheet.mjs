@@ -108,6 +108,7 @@ export class SwordsWizardryActorSheet extends ActorSheet {
    */
   _prepareItems(context) {
     // Initialize containers.
+    const armor = [];
     const gear = [];
     const features = [];
     const weapons = [];
@@ -127,11 +128,13 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     for (let i of context.items) {
       i.img = i.img || Item.DEFAULT_ICON;
       // Append to gear.
+      if (i.type === 'armor') {
+        armor.push(i);
+      }
       if (i.type === 'item') {
         gear.push(i);
       }
-      else if (i.type === 'weapon')
-      {
+      else if (i.type === 'weapon') {
         weapons.push(i);
       }
       // Append to features.
@@ -147,6 +150,7 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     }
 
     // Assign and return
+    context.armor = armor;
     context.gear = gear;
     context.features = features;
     context.weapons = weapons;
@@ -170,7 +174,7 @@ export class SwordsWizardryActorSheet extends ActorSheet {
       const li = $(ev.currentTarget).parents('.item');
       const item = this.actor.items.get(li.data('itemId'));
       const status = !item.system.prepared;
-      item.update({ 'system.prepared' : status});
+      item.update({ 'system.prepared': status });
       this.actor.render();
     });
 
@@ -207,7 +211,7 @@ export class SwordsWizardryActorSheet extends ActorSheet {
       const li = $(ev.currentTarget).parents('.item');
       const item = this.actor.items.get(li.data('itemId'));
       const newq = item.system.quantity + 1;
-      item.update({ 'system.quantity' : newq});
+      item.update({ 'system.quantity': newq });
       this.actor.render();
     });
 
@@ -215,11 +219,11 @@ export class SwordsWizardryActorSheet extends ActorSheet {
       const li = $(ev.currentTarget).parents('.item');
       const item = this.actor.items.get(li.data('itemId'));
       const newq = item.system.quantity - 1;
-      if(newq > 0)
-        item.update({ 'system.quantity' : newq});
+      if (newq > 0)
+        item.update({ 'system.quantity': newq });
       this.actor.render();
     });
-    
+
     // Drag events for macros.
     if (this.actor.isOwner) {
       let handler = (ev) => this._onDragStart(ev);
@@ -280,7 +284,7 @@ export class SwordsWizardryActorSheet extends ActorSheet {
     // Handle rolls that supply the formula directly.
     if (dataset.roll) {
       let label = dataset.label ? `[ability] ${dataset.label}` : '';
-      
+
       let roll = new Roll(dataset.roll, this.actor.getRollData());
 
       roll.toMessage({

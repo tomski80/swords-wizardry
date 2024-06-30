@@ -221,25 +221,29 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell", "weapon"],
+    "types": ["armor", "item", "feature", "spell", "weapon"],
     "templates": {
       "base": {
         "description": ""
       },
       "buyable": {
-        "gold": 0
+        "gold": 0,
+        "weight": 0
       }
+    },
+    "armor": {
+      "templates": ["base", "buyable"],
+      "quantity": 1,
+      "effectOnAC": 0
     },
     "item": {
       "templates": ["base", "buyable"],
       "quantity": 1,
-      "weight": 0,
       "formula": "d6"
     },
     "weapon": {
       "templates": ["base", "buyable"],
       "quantity": 1,
-      "weight": 0,
       "range": 0,
       "rateOfFire": 1,
       "formula": "d20 + @toHit.v",

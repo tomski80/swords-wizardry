@@ -31,6 +31,15 @@
           "RollFormula": "Roll Formula",
           "Update": "Update Weapon",
           "Weight": "Weight"
+        },
+        "ArmorTable": {
+          "Create": "Create Armor",
+          "Delete": "Delete Armor",
+          "Name": "Name",
+          "New": "New Armor",
+          "EffectOnAC": "Effect on AC",
+          "Update": "Update Armor",
+          "Weight": "Weight"
         }
       },
       "Equipment": {
@@ -148,6 +157,19 @@
           "Description": "Description",
           "Effects": "Effects"
         }
+      },
+      "Armor": {
+        "Attributes": {
+          "EffectOnAC": "Effect on AC"
+        },
+        "Name": "Name",
+        "Quantity": "Quantity",
+        "Gold": "Gold",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description"
+        },
+        "Weight": "Weight"
       },
       "Item": {
         "Attributes": {

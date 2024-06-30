@@ -31,6 +31,15 @@
           "RollFormula": "Angriffswurf",
           "Update": "Waffe ändern",
           "Weight": "Gewicht"
+        },
+        "ArmorTable": {
+          "Create": "Create Armor",
+          "Delete": "Delete Armor",
+          "Name": "Name",
+          "New": "New Armor",
+          "EffectOnAC": "Effect on AC",
+          "Update": "Update Armor",
+          "Weight": "Weight"
         }
       },
       "Equipment": {
