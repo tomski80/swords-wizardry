@@ -223,6 +223,7 @@
       "item": "Magischer Gegenstand",
       "feature": "Merkmal",
       "spell": "Zauber",
+      "armor": "Rüstung",
       "weapon": "Waffe"
     }
   },

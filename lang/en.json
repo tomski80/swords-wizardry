@@ -231,6 +231,7 @@
       "item": "Item",
       "feature": "Feature",
       "spell": "Spell",
+      "armor": "Armor",
       "weapon": "Weapon"
     }
   },
