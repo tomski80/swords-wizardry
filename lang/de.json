@@ -1,5 +1,32 @@
 {
   "SWORDS_WIZARDRY": {
+    "Chat": {
+      "Rolled": "Rolled",
+      "Hit": "Hit",
+      "Missed": "Missed",
+      "Damage": "Damage",
+      "Special": "Special",
+      "Target": "Target",
+      "Success": "Success",
+      "Failure": "Failure",
+      "Healing": "Heilung",
+      "SavingThrow": "Rettungswurf",
+      "Targets": "Ziele",
+      "AttackBy": "Angriff von",
+      "CastBy": "Gewirkt von",
+      "UsedBy": "Von",
+      "Effects": "Auswirkungen",
+      "FullEffect": "Volle Wirkung",
+      "HalfEffect": "Halbe Wirkung",
+      "NegatesSpell": "Zauber unwirksam",
+      "SuccessfulSave": "Erfolgreicher Rettungswurf",
+      "Applied": "Angewendet",
+      "HalfDamage": "Halber Schaden",
+      "HalfHealing": "Halbe Heilung",
+      "DoubleDamage": "Doppelter Schaden",
+      "NoEffect": "Keine Wirkung",
+      "OnlyGMCanApply": "Nur die Spielleitung kann Schaden oder Heilung anwenden."
+    },
     "NPCSheet": {
       "Main": {
         "Name": "Name",
@@ -8,6 +35,8 @@
       "Tabs": {
         "Attacks": "Angriffe",
         "Description": "Beschreibung",
+        "Equipment": "Ausrüstung",
+        "Spells": "Zauber",
         "Effects": "Effekte"
       }
     },
@@ -24,19 +53,36 @@
       "Combat": {
         "RollNeededToHitAC": "Erforderlicher Angriffswurf",
         "Table": {
+          "Title": "Weapons",
           "Create": "Neue Waffe hinzufügen",
           "Delete": "Waffe entfernen",
           "Name": "Name",
           "New": "Neue Waffe",
           "RollFormula": "Angriffswurf",
+          "ToHitModifier": "To Hit Mod",
+          "DamageRollFormula": "Damage Roll",
           "Update": "Waffe ändern",
+          "Weight": "Gewicht"
+        },
+        "ArmorTable": {
+          "Title": "Rüstung",
+          "Create": "Rüstung herstellen",
+          "Delete": "Rüstung löschen",
+          "Name": "Name",
+          "New": "Neue Rüstung",
+          "EffectOnAC": "Auswirkung auf die Rüstungsklasse",
+          "Update": "Rüstung aktualisieren",
           "Weight": "Gewicht"
         }
       },
       "Equipment": {
         "Gems": "Edelsteine",
-        "Gold": "Gold",
+        "Copper": "Kupfermünzen",
+        "Gold": "Goldmünzen",
+        "Platinum": "Platinmünzen",
+        "Silver": "Silbermünzen",
         "Other": "Sonstiges",
+        "Items": "Artikel",
         "Table": {
           "Create": "Neuen Gegenstand hinzufügen",
           "Delete": "Gegenstand entfernen",
@@ -50,6 +96,7 @@
       },
       "Features": {
         "Table": {
+          "Title": "Class Abilities & Features",
           "Create": "Neues Merkmal hinzufügen",
           "Delete": "Merkmal entfernen",
           "Name": "Name",
@@ -65,6 +112,7 @@
         "Remaining": "Verfügbar",
         "Total": "Gesamt",
         "Prepared": "Vorbereitet",
+        "Known": "Known Spells",
         "Table": {
           "Create": "Neuen Zauber hinzufügen",
           "Delete": "Zauber entfernen",
@@ -77,8 +125,15 @@
         "Description": "Beschreibung",
         "Equipment": "Ausrüstung",
         "Main": "Eigenschaften",
-        "Spells": "Zauber"
+        "Spells": "Zauber",
+        "Effects": "Auswirkungen"
       }
+    },
+    "ItemSheet": {
+       "Tabs": {
+         "Details": "Details",
+         "Effects": "Auswirkungen"
+       }
     },
     "Stats": {
       "Alignment": "Gesinnung",
@@ -93,7 +148,9 @@
       "SavingThrow": { "long": "Rettungswurf", "abbr": "RW" },
       "WeightCarried": "Traglast",
       "XP": { "long": "Erfahrungspunkte", "abbr": "EP" },
-      "XPBonus": { "long": "Erfahrungspunktebonus", "abbr": "EP Bonus" }
+      "XPBonus": { "long": "Erfahrungspunktebonus", "abbr": "EP Bonus" },
+      "NumberEncountered": { "long": "Number Encountered", "abbr": "No. Enc" },
+      "PercentInLair": { "long": "% in Lair", "abbr": "% in Lair" }
     },
     "Ability": {
       "Str": { "long": "Stärke", "abbr": "ST" },
@@ -103,37 +160,22 @@
       "Wis": { "long": "Weisheit", "abbr": "WE" },
       "Cha": { "long": "Charisma", "abbr": "CH" }
     },
-    "Bonus": {
+    "Modifier": {
       "toHit": { "long": "Angriffsbonus", "abbr": "AB" },
-      "OpenDoor": { "long": "Türen aufbrechen", "abbr": "Tür aufbr." },
-      "CarryMod": { "long": "Traglast", "abbr": "Traglast" },
+      "OpenDoors": { "long": "Türen aufbrechen", "abbr": "Tür aufbr." },
+      "Carry": { "long": "Traglast", "abbr": "Traglast" },
       "Damage": { "long": "Schadensbonus", "abbr": "Sch-Bonus" },
-      "toMissiles": { "long": "Fernkampfbonus", "abbr": "Fk-Bonus" },
-      "Armour": { "long": "Rüstungsklasse-Bonus", "abbr": "RK-Bonus" },
-      "HPBonus": { "long": "Trefferpunkte-Bonus", "abbr": "TP-Bonus" },
-      "RaiseDeadChance": {
-        "long": "Überlebenschance bei Tote erwecken",
-        "abbr": "Überlebenschance"
-      },
-      "AddLanguages": {
-        "long": "Höchstzahl Sprachen",
-        "abbr": "Max. Sprachen"
-      },
-      "MaxSpecialHirelings": {
-        "long": "Höchstzahl Spezialisten",
-        "abbr": "Max. Spezialisten"
-      }
-    },
-    "thieving": {
-      "climbwalls": { "long": "Wände erklettern", "abbr": "Klettern" },
-      "delicatetask": {
-        "long": "Filigrane Aufgaben & Fallen",
-        "abbr": "Filigranes"
-      },
-      "hearsound": { "long": "Lauschen", "abbr": "Lauschen" },
-      "hideinshadow": { "long": "Im Schatten verstecken", "abbr": "Schatten" },
-      "movesilently": { "long": "Schleichen", "abbr": "Schleichen" },
-      "openlocks": { "long": "Schlösser knacken", "abbr": "Schlösser" }
+      "MissileToHit": { "long": "Fernkampfbonus", "abbr": "Fk-Bonus" },
+      "AC": { "long": "Rüstungsklasse-Bonus", "abbr": "RK-Bonus" },
+      "HP": { "long": "Trefferpunkte-Bonus", "abbr": "TP-Bonus" },
+      "RaiseDeadChance": { "long": "Überlebenschance bei Tote erwecken", "abbr": "Überlebenschance" },
+      "AdditionalLanguages": { "long": "Höchstzahl Sprachen", "abbr": "Max. Sprachen" },
+      "MaximumSpellLevel": { "long": "Maximum Spell Level", "abbr": "spell lvl" },
+      "ChanceToUnderstandSpell": { "long": "Chance to Understand Spell", "abbr": "spell chance" },
+      "MinimumSpellsPerLevel": { "long": "Minimum Spells Per Level", "abbr": "min spells" },
+      "MaximumSpellsPerLevel": { "long": "Maximum Spells Per Level", "abbr": "max spells" },
+      "MaxSpecialHirelings": { "long": "Höchstzahl Spezialisten", "abbr": "Max. Spezialisten" },
+      "RetainerMoraleAdjustment": { "long": "Retainer Morale Adjustment", "short": "retainer" }
     },
     "SheetLabels": {
       "Actor": "SwordsWizardry Charakterbogen",
@@ -148,9 +190,29 @@
           "Effects": "Effekte"
         }
       },
+      "Armor": {
+        "Attributes": {
+          "EffectOnAC": "Auswirkung auf die Rüstungsklasse"
+        },
+        "Name": "Name",
+        "Quantity": "Quantity",
+        "Gold": "Gold",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description"
+        },
+        "Weight": "Weight"
+      },
       "Item": {
         "Attributes": {
-          "RollFormula": "Würfelberechnung"
+          "ToHitModifier": "To Hit Modifier",
+          "RollFormula": "Würfelberechnung",
+          "Target": "Target",
+          "TargetType": "Target Type",
+          "TargetTypeAsc": "Ascending",
+          "TargetTypeDes": "Descending",
+          "Usable": "Brauchbar",
+          "Consumable": "Verbrauchsmaterial"
         },
         "Name": "Name",
         "Quantity": "Anzahl",
@@ -163,18 +225,34 @@
       "Spell": {
         "Name": "Name",
         "Level": "Zaubergrad",
+        "Range": "Range",
+        "Duration": "Duration",
+        "RollFormula": "Würfelformel",
+        "RollType": "Rollentyp",
+        "RollNone": "Keiner",
+        "RollDamage": "Schaden",
+        "RollHealing": "Heilung",
+        "RequiresSave": "Rettungswurf erforderlich",
+        "SaveEffect": "Bei erfolgreichem Rettungswurf",
+        "InvalidFormula": "Die Zauberformel '{formula}' ist ungültig.",
         "Tabs": {
           "Attributes": "Eigenschaften",
-          "Description": "Beschreibung"
+          "Description": "Beschreibung",
+          "Effects": "Auswirkungen"
         }
       },
       "Weapon": {
         "Attributes": {
           "RollFormula": "Trefferberechnung",
-          "DamageRollFormula": "Schadensberechnung"
+          "ToHitModifier": "To Hit Modifier",
+          "DamageRollFormula": "Schadensberechnung",
+          "Range": "Reichweite",
+          "Missile": "Missile Weapon?",
+          "RateOfFire": "Feuerrate"
         },
         "Name": "Name",
         "Quantity": "Anzahl",
+        "Gold": "Gold",
         "Tabs": {
           "Attributes": "Eigenschaften",
           "Description": "Beschreibung"
@@ -187,12 +265,15 @@
       "Delete": "Effekt löschen",
       "Duration": "Dauer",
       "New": "Neuer Effekt",
+      "DurationFormula": "Formel für die Dauer",
+      "DurationFormulaUnits": "Dauereinheiten",
       "Source": "Ursprung",
       "Toggle": "Effekt de-/ aktivieren",
       "Temporary": "Temporärer Effekt",
       "Passive": "Passive Effekte",
       "Inactive": "Inaktive Effekte",
-      "Update": "Effekt ändern"
+      "Update": "Effekt ändern",
+      "Targeted": "betrifft Zielakteure"
     }
   },
   "TYPES": {
@@ -204,11 +285,13 @@
       "item": "Magischer Gegenstand",
       "feature": "Merkmal",
       "spell": "Zauber",
+      "armor": "Rüstung",
       "weapon": "Waffe"
     }
   },
   "New": {
     "item": "Neuer Gegenstand",
+    "effect": "Neuer Effekt",
     "feature": "Neues Merkmal",
     "spell": "Neuer Zauber",
     "weapon": "Neue Waffe"

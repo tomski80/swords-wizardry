@@ -1,5 +1,32 @@
 {
   "SWORDS_WIZARDRY": {
+    "Chat": {
+      "Rolled": "Rolled",
+      "Hit": "Hit",
+      "Missed": "Missed",
+      "Damage": "Damage",
+      "Special": "Special",
+      "Target": "Target",
+      "Success": "Success",
+      "Failure": "Failure",
+      "Healing": "Healing",
+      "SavingThrow": "Saving Throw",
+      "Targets": "Targets",
+      "AttackBy": "Attack by",
+      "CastBy": "Cast by",
+      "UsedBy": "Used by",
+      "Effects": "Effects",
+      "FullEffect": "Full Effect",
+      "HalfEffect": "Half Effect",
+      "NegatesSpell": "Negates Spell",
+      "SuccessfulSave": "Successful Save",
+      "Applied": "Applied",
+      "HalfDamage": "Half Damage",
+      "HalfHealing": "Half Healing",
+      "DoubleDamage": "Double Damage",
+      "NoEffect": "No Effect",
+      "OnlyGMCanApply": "Only the GM can apply damage or healing."
+    },
     "NPCSheet": {
       "Main": {
         "Name": "Name",
@@ -8,6 +35,8 @@
       "Tabs": {
         "Attacks": "Attacks",
         "Description": "Description",
+        "Equipment": "Equipment",
+        "Spells": "Spells",
         "Effects": "Effects"
       }
     },
@@ -24,19 +53,36 @@
       "Combat": {
         "RollNeededToHitAC": "Roll Needed To Hit Armor Class",
         "Table": {
+          "Title": "Weapons",
           "Create": "Create Weapon",
           "Delete": "Delete Weapon",
           "Name": "Name",
           "New": "New Weapon",
           "RollFormula": "Roll Formula",
+          "ToHitModifier": "To Hit Mod",
+          "DamageRollFormula": "Damage Roll",
           "Update": "Update Weapon",
+          "Weight": "Weight"
+        },
+        "ArmorTable": {
+          "Title": "Armor",
+          "Create": "Create Armor",
+          "Delete": "Delete Armor",
+          "Name": "Name",
+          "New": "New Armor",
+          "EffectOnAC": "Effect on AC",
+          "Update": "Update Armor",
           "Weight": "Weight"
         }
       },
       "Equipment": {
         "Gems": "Gems",
+        "Copper": "Copper",
         "Gold": "Gold",
+        "Platinum": "Platinum",
+        "Silver": "Silver",
         "Other": "Other",
+        "Items": "Items",
         "Table": {
           "Create": "Create Item",
           "Delete": "Delete Item",
@@ -50,6 +96,7 @@
       },
       "Features": {
         "Table": {
+          "Title": "Class Abilities & Features",
           "Create": "Create Feature",
           "Delete": "Delete Feature",
           "Name": "Name",
@@ -64,7 +111,8 @@
         "SpellLVL": "Level {level} Spells",
         "Remaining": "Remaining",
         "Total": "Total",
-        "Prepared": "Prepared",
+        "Prepared": "Prepared Spells",
+        "Known": "Known Spells",
         "Table": {
           "Create": "Create Spell",
           "Delete": "Delete Spell",
@@ -77,17 +125,21 @@
         "Description": "Description",
         "Equipment": "Equipment",
         "Main": "Main",
-        "Spells": "Spells"
+        "Spells": "Spells",
+        "Effects": "Effects"
       }
+    },
+    "ItemSheet": {
+       "Tabs": {
+         "Details": "Details",
+         "Effects": "Effects"
+       }
     },
     "Stats": {
       "Alignment": "Alignment",
       "ArmorClass": { "long": "Armor Class", "abbr": "AC" },
       "Class": "Class",
-      "CL_XP": {
-        "long": "Challenge Level / Experience Points",
-        "abbr": "CL / XP"
-      },
+      "CL_XP": { "long": "Challenge Level / Experience Points", "abbr": "CL / XP" },
       "HitDie": { "long": "Hit Die", "abbr": "HD" },
       "HitPoints": { "long": "Hit Points", "abbr": "HP" },
       "Level": "Level",
@@ -96,7 +148,9 @@
       "SavingThrow": { "long": "Saving Throw", "abbr": "Save" },
       "WeightCarried": "Weight Carried",
       "XP": { "long": "Experience Points", "abbr": "XP" },
-      "XPBonus": { "long": "Experience Point Bonus", "abbr": "XP Bonus" }
+      "XPBonus": { "long": "Experience Point Bonus", "abbr": "XP Bonus" },
+      "NumberEncountered": { "long": "Number Encountered", "abbr": "No. Enc" },
+      "PercentInLair": { "long": "Percent in Lair", "abbr": "% in Lair" }
     },
     "Ability": {
       "Str": { "long": "Strength", "abbr": "str" },
@@ -106,28 +160,22 @@
       "Wis": { "long": "Wisdom", "abbr": "wis" },
       "Cha": { "long": "Charisma", "abbr": "cha" }
     },
-    "Bonus": {
-      "toHit": { "long": "Bonus to Hit", "abbr": "toHit" },
-      "OpenDoor": { "long": "Open Door", "abbr": "opendoor" },
-      "CarryMod": { "long": "Carry Modificator", "abbr": "Carry Mod" },
-      "Damage": { "long": "Damage Bonus", "abbr": "dmgbonus" },
-      "toMissiles": { "long": "Bonus to Missiles", "abbr": "toMissiles" },
-      "Armour": { "long": "Armour Bonus", "abbr": "ACbonus" },
-      "HPBonus": { "long": "Hit Point Bonus", "abbr": "hpbonus" },
-      "RaiseDeadChance": { "long": "Raise Dead Survival", "abbr": "respawn" },
-      "AddLanguages": { "long": "Additional Languages", "abbr": "pluslan" },
-      "MaxSpecialHirelings": {
-        "long": "Max # of Special Hirelings",
-        "abbr": "numhire"
-      }
-    },
-    "thieving": {
-      "climbwalls": { "long": "Climb Walls", "abbr": "clmbwalls" },
-      "delicatetask": { "long": "Delicate Task", "abbr": "dtask" },
-      "hearsound": { "long": "Hear Sound", "abbr": "hear" },
-      "hideinshadow": { "long": "Hide in Shadows", "abbr": "hide" },
-      "movesilently": { "long": "Move Silently", "abbr": "movesilent" },
-      "openlocks": { "long": "Open Locks", "abbr": "openlocks" }
+    "Modifier": {
+      "toHit": { "long": "Bonus to Hit", "abbr": "To Hit" },
+      "OpenDoors": { "long": "Open Doors", "abbr": "Open Doors" },
+      "Damage": { "long": "Damage Bonus", "abbr": "Damage" },
+      "Carry": { "long": "Carry Modifier", "abbr": "Carry Mod" },
+      "MissileToHit": { "long": "Bonus to Missiles", "abbr": "Missile Bonus" },
+      "AC": { "long": "Armor Bonus", "abbr": "AC Bonus" },
+      "HP": { "long": "Hit Point Bonus", "abbr": "HP Bonus" },
+      "RaiseDeadChance": { "long": "Raise Dead Survival", "abbr": "Raise Dead %" },
+      "AdditionalLanguages": { "long": "Additional Languages", "abbr": "Add Lang" },
+      "MaximumSpellLevel": { "long": "Maximum Spell Level", "abbr": "Max Spell Level" },
+      "ChanceToUnderstandSpell": { "long": "Chance to Understand Spell", "abbr": "Know Spell %" },
+      "MinimumSpellsPerLevel": { "long": "Minimum Spells Per Level", "abbr": "Min Spells/lvl" },
+      "MaximumSpellsPerLevel": { "long": "Maximum Spells Per Level", "abbr": "Max Spells/lvl" },
+      "MaxSpecialHirelings": { "long": "Max # Special Hirelings", "abbr": "Max Hirelings" },
+      "RetainerMoraleAdjustment": { "long": "Retainer Morale Adjustment", "abbr": "Morale" }
     },
     "SheetLabels": {
       "Actor": "SwordsWizardry Actor Sheet",
@@ -142,21 +190,53 @@
           "Effects": "Effects"
         }
       },
-      "Item": {
+      "Armor": {
         "Attributes": {
-          "RollFormula": "Roll Formula"
+          "EffectOnAC": "Effect on AC"
         },
         "Name": "Name",
         "Quantity": "Quantity",
+        "Gold": "Gold",
         "Tabs": {
           "Attributes": "Attributes",
           "Description": "Description"
         },
         "Weight": "Weight"
       },
+      "Item": {
+        "Attributes": {
+          "ToHitModifier": "To Hit Modifier",
+          "RollFormula": "Roll Formula",
+          "Target": "Target",
+          "TargetType": "Target Type",
+          "TargetTypeAsc": "Ascending",
+          "TargetTypeDes": "Descending",
+          "Usable": "Usable",
+          "Consumable": "Consumable"
+        },
+        "Name": "Name",
+        "Quantity": "Quantity",
+        "Gold": "Gold",
+        "Tabs": {
+          "Attributes": "Attributes",
+          "Description": "Description",
+          "Effects": "Effects"
+        },
+        "Weight": "Weight"
+      },
       "Spell": {
         "Name": "Name",
         "Level": "Level",
+        "Range": "Range",
+        "Duration": "Duration",
+        "RollFormula": "Roll Formula",
+        "RollType": "Roll Type",
+        "RollNone": "None",
+        "RollDamage": "Damage",
+        "RollHealing": "Healing",
+        "RequiresSave": "Allows Save",
+        "SaveEffect": "On Save",
+        "InvalidFormula": "The spell roll formula '{formula}' is invalid.",
         "Tabs": {
           "Attributes": "Attributes",
           "Description": "Description"
@@ -165,10 +245,16 @@
       "Weapon": {
         "Attributes": {
           "RollFormula": "Roll Formula",
-          "DamageRollFormula": "Damage Roll Formula"
+          "ToHitModifier": "To Hit Modifier",
+          "DamageRollFormula": "Damage Roll",
+          "Range": "Range",
+          "Missile": "Missile Weapon?",
+          "RateOfFire": "Rate Of Fire",
+          "SpecialDamage": "Special Damage"
         },
         "Name": "Name",
         "Quantity": "Quantity",
+        "Gold": "Gold",
         "Tabs": {
           "Attributes": "Attributes",
           "Description": "Description"
@@ -180,30 +266,36 @@
       "Create": "Create Effect",
       "Delete": "Delete Effect",
       "Duration": "Duration",
-      "New": "New Effect",
+      "DurationFormula": "Duration Formula",
+      "DurationFormulaUnits": "Duration Units",
       "Source": "Source",
       "Toggle": "Toggle Effect",
       "Temporary": "Temporary Effects",
       "Passive": "Passive Effects",
       "Inactive": "Inactive Effects",
-      "Update": "Update Effect"
+      "Update": "Update Effect",
+      "Targeted": "Affects Target Actors"
     }
   },
   "TYPES": {
     "Actor": {
       "character": "Character",
+      "container": "Container",
       "npc": "NPC"
     },
     "Item": {
       "item": "Item",
       "feature": "Feature",
       "spell": "Spell",
+      "armor": "Armor",
       "weapon": "Weapon"
     }
   },
   "New": {
-    "item": "New Item",
+    "armor": "New Armor",
+    "effect": "New Effect",
     "feature": "New Feature",
+    "item": "New Item",
     "spell": "New Spell",
     "weapon": "New Weapon"
   }

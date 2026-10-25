@@ -1,0 +1,20 @@
+{{#if (eq actor.type 'container')}}
+<section class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+  <header class="sheet-header">
+    <img
+      class="profile-img"
+      src="{{actor.img}}"
+      data-action="editImage"
+      data-field="img"
+      title="{{actor.name}}"
+      height="100"
+      width="100"
+    />
+    <div class="header-fields">
+      <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder={{localize 'SWORDS_WIZARDRY.NPCSheet.Main.Name'}}></h2>
+    </div>
+  </header>
+</section>
+{{else}}
+<div></div>
+{{/if}}

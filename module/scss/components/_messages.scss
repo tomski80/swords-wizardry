@@ -1,0 +1,60 @@
+.damage-roll-button {
+  font-family: $font-primary;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.damage-special-text {
+  margin-top: 5px;
+}
+.damage-target {
+  border: 1px solid #666666;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.damage-buttons {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+
+  button {
+    flex: 1;
+    font-size: 11px;
+  }
+}
+
+h4.targets {
+  margin-top: 1rem;
+}
+
+.spell-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.spell-card-image {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+}
+
+.spell-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  margin-top: 6px;
+}
+
+.spell-card-description,
+.spell-card-roll,
+.spell-card-save {
+  margin-top: 6px;
+}

@@ -1,0 +1,32 @@
+<section class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img
+      class="profile-img"
+      src="{{item.img}}"
+      data-action="editImage"
+      data-field="img"
+      title="{{item.name}}"
+    />
+    <div class="header-fields">
+      <h2 class="charname">
+        <input name="name" type="text" value="{{item.name}}" placeholder={{localize "SWORDS_WIZARDRY.Item.Item.Name"}}/>
+      </h2>
+      {{#if (or (or (eq item.type 'item') (eq item.type 'weapon')) (eq item.type 'armor'))}}
+      <div class="grid grid-3col">
+        <div class="resource">
+          <label class="resource-label">{{localize "SWORDS_WIZARDRY.Item.Item.Quantity"}}</label>
+          <input type="text" name="system.quantity" value="{{system.quantity}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "SWORDS_WIZARDRY.Item.Item.Weight"}}</label>
+          <input type="text" name="system.weight" value="{{system.weight}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "SWORDS_WIZARDRY.Item.Item.Gold"}}</label>
+          <input type="text" name="system.gp" value="{{system.gp}}" data-dtype="Number"/>
+        </div>
+      </div>
+      {{/if}}
+    </div>
+  </header>
+</section>

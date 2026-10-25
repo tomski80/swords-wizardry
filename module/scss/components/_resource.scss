@@ -1,0 +1,53 @@
+.resource {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  label {
+    text-align: center;
+  }
+
+  input {
+    text-align: center;
+  }
+
+  select {
+    width: calc(100% - 2px);
+    text-align: center;
+  }
+
+  .slash {
+      margin-top: 5px;
+      font-weight: bold;
+  }
+}
+
+h3 {
+  font-family: 'Libre Baskerville';
+  font-size: 20px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+h4 {
+  font-family: 'Libre Baskerville';
+  font-size: 16px;
+}
+
+.ability {
+  label {
+    padding-top: 8px;
+  }
+  .checkbox-small {
+    padding-top: 3px;
+  }
+}
+
+.toggle {
+  margin-top: 4px;
+  i {
+    margin-left: -3px;
+  }
+}

@@ -1,0 +1,24 @@
+body {
+  font-family: $font-primary;
+  font-size: 10pt;
+}
+
+.window-app {
+  font-family: $font-primary;
+}
+
+/* Need to scope this down and maybe weight down to 700?
+h1, h2, h3, h4, h5 {
+    font-family: $font-header;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+*/
+
+.swords-wizardry {
+  font-family: $font-primary;
+}
+
+input {
+    font-family: $font-primary;
+}

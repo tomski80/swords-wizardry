@@ -1,13 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/systems/swords-wizardry/assets/fonts/LibreBaskerville/LibreBaskerville-Regular.ttf");
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  src: url("/systems/swords-wizardry/assets/fonts/LibreBaskerville/LibreBaskerville-Bold.ttf");
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  src: url("/systems/swords-wizardry/assets/fonts/LibreBaskerville/LibreBaskerville-Italic.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/systems/swords-wizardry/assets/fonts/Inter/Inter_24pt-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 800;
+  src: url("/systems/swords-wizardry/assets/fonts/Inter/Inter_24pt-ExtraBold.ttf");
+}
+/*$font-header: 'Inter';*/
 /* Global styles */
-.window-app {
-  font-family: "Roboto", sans-serif;
+body {
+  font-family: "Libre Baskerville";
+  font-size: 10pt;
 }
 
-.rollable:hover, .rollable:focus {
-  color: #000;
-  text-shadow: 0 0 10px red;
-  cursor: pointer;
+.window-app {
+  font-family: "Libre Baskerville";
+}
+
+/* Need to scope this down and maybe weight down to 700?
+h1, h2, h3, h4, h5 {
+    font-family: $font-header;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+*/
+.swords-wizardry {
+  font-family: "Libre Baskerville";
+}
+
+input {
+  font-family: "Libre Baskerville";
 }
 
 .grid,
@@ -18,6 +56,11 @@
   gap: 10px;
   margin: 10px 0;
   padding: 0;
+}
+
+.grid-1col {
+  grid-column: span 1/span 1;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-3col {
@@ -263,17 +306,53 @@
 }
 
 /* Styles limited to swords-wizardry sheets */
+.swords-wizardry .window-content {
+  overflow: scroll;
+}
+.swords-wizardry .combat-hud-name {
+  font-family: "Libre Baskerville";
+}
+.swords-wizardry .combat-hud-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.swords-wizardry .combat-hud-list img {
+  display: inline;
+  vertical-align: middle;
+}
+.swords-wizardry .combat-hud-list span {
+  vertical-align: middle;
+  padding-left: 4px;
+}
+.swords-wizardry .combat-hud-list .save-roll .rollable > div {
+  height: 24px;
+  width: 24px;
+  border: solid 1px black;
+  text-align: center;
+  padding-top: 3px;
+  color: white;
+}
+.swords-wizardry .effects .item .effect-source,
+.swords-wizardry .effects .item .effect-duration,
+.swords-wizardry .effects .item .effect-controls {
+  text-align: center;
+  border-left: 1px solid #c9c7b8;
+  border-right: 1px solid #c9c7b8;
+  font-size: 12px;
+}
+.swords-wizardry .effects .item .effect-controls {
+  border: none;
+}
 .swords-wizardry .item-form {
-  font-family: "Roboto", sans-serif;
+  /*font-family: $font-primary;*/
 }
 .swords-wizardry .sheet-header {
   flex: 0 auto;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 10px;
 }
 .swords-wizardry .sheet-header .profile-img {
   flex: 0 0 100px;
@@ -294,22 +373,8 @@
   height: 100%;
   margin: 0;
 }
-.swords-wizardry .sheet-tabs {
-  flex: 0;
-}
-.swords-wizardry .sheet-body,
-.swords-wizardry .sheet-body .tab,
-.swords-wizardry .sheet-body .tab .editor {
-  height: 100%;
-}
-.swords-wizardry .tox .tox-editor-container {
-  background: #fff;
-}
-.swords-wizardry .tox .tox-edit-area {
-  padding: 0 8px;
-}
-.swords-wizardry .resource-label {
-  font-weight: bold;
+.swords-wizardry .charname input {
+  height: auto;
 }
 .swords-wizardry .items-header {
   height: 28px;
@@ -336,7 +401,6 @@
   padding: 0;
   overflow-y: auto;
   scrollbar-width: thin;
-  color: #444;
 }
 .swords-wizardry .items-list .item-list {
   list-style: none;
@@ -347,25 +411,26 @@
   flex: 2;
   margin: 0;
   overflow: hidden;
-  font-size: 13px;
   text-align: left;
   align-items: center;
   display: flex;
 }
 .swords-wizardry .items-list .item-name h3, .swords-wizardry .items-list .item-name h4 {
   margin: 0;
+  margin-top: -3px;
   white-space: nowrap;
   overflow-x: hidden;
 }
 .swords-wizardry .items-list .item-controls {
   display: flex;
-  flex: 0 0 100px;
+  flex: 0 0 150px;
   justify-content: flex-end;
 }
 .swords-wizardry .items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
+  margin-top: -3px;
 }
 .swords-wizardry .items-list .item {
   align-items: center;
@@ -375,9 +440,6 @@
 .swords-wizardry .items-list .item:last-child {
   border-bottom: none;
 }
-.swords-wizardry .items-list .item .item-name {
-  color: #191813;
-}
 .swords-wizardry .items-list .item .item-name .item-image {
   flex: 0 0 30px;
   height: 30px;
@@ -385,8 +447,12 @@
   border: none;
   margin-right: 5px;
 }
+.swords-wizardry .items-list .item .item-name .item-name-span {
+  margin-top: -3px;
+}
 .swords-wizardry .items-list .item-prop {
   text-align: center;
+  margin-top: -3px;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
@@ -400,6 +466,9 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
+.swords-wizardry .items-list .items-header .item-controls {
+  margin-top: 1px;
+}
 .swords-wizardry .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
@@ -408,20 +477,98 @@
   padding-left: 5px;
   text-align: left;
 }
-.swords-wizardry .item-formula {
-  flex: 0 0 200px;
-  padding: 0 8px;
+.swords-wizardry .damage-roll-button {
+  font-family: "Libre Baskerville";
+  width: 100%;
+  margin-top: 5px;
 }
-.swords-wizardry .effects .item .effect-source,
-.swords-wizardry .effects .item .effect-duration,
-.swords-wizardry .effects .item .effect-controls {
+.swords-wizardry .damage-special-text {
+  margin-top: 5px;
+}
+.swords-wizardry .damage-target {
+  border: 1px solid #666666;
+  padding: 5px;
+  margin-top: 5px;
+}
+.swords-wizardry .damage-buttons {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+.swords-wizardry .damage-buttons button {
+  flex: 1;
+  font-size: 11px;
+}
+.swords-wizardry h4.targets {
+  margin-top: 1rem;
+}
+.swords-wizardry .spell-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.swords-wizardry .spell-card-header h3 {
+  margin: 0;
+}
+.swords-wizardry .spell-card-image {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+}
+.swords-wizardry .spell-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  margin-top: 6px;
+}
+.swords-wizardry .spell-card-description,
+.swords-wizardry .spell-card-roll,
+.swords-wizardry .spell-card-save {
+  margin-top: 6px;
+}
+.swords-wizardry .resource {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.swords-wizardry .resource label {
   text-align: center;
-  border-left: 1px solid #c9c7b8;
-  border-right: 1px solid #c9c7b8;
-  font-size: 12px;
 }
-.swords-wizardry .effects .item .effect-controls {
-  border: none;
+.swords-wizardry .resource input {
+  text-align: center;
+}
+.swords-wizardry .resource select {
+  width: calc(100% - 2px);
+  text-align: center;
+}
+.swords-wizardry .resource .slash {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.swords-wizardry h3 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+}
+.swords-wizardry .no-margin {
+  margin: 0;
+}
+.swords-wizardry h4 {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+}
+.swords-wizardry .ability label {
+  padding-top: 8px;
+}
+.swords-wizardry .ability .checkbox-small {
+  padding-top: 3px;
+}
+.swords-wizardry .toggle {
+  margin-top: 4px;
+}
+.swords-wizardry .toggle i {
+  margin-left: -3px;
 }
 
 /*# sourceMappingURL=swords-wizardry.css.map */

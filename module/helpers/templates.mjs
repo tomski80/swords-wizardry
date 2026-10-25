@@ -3,15 +3,15 @@
  * Pre-loaded templates are compiled and cached for fast access when rendering
  * @return {Promise}
  */
+const { loadTemplates } = foundry.applications.handlebars;
+
 export const preloadHandlebarsTemplates = async function () {
   return loadTemplates([
-    // Actor partials.
-    'systems/swords-wizardry/templates/actor/parts/actor-features.hbs',
-    'systems/swords-wizardry/templates/actor/parts/actor-weapons.hbs',
-    'systems/swords-wizardry/templates/actor/parts/actor-items.hbs',
-    'systems/swords-wizardry/templates/actor/parts/actor-spells.hbs',
-    'systems/swords-wizardry/templates/actor/parts/actor-effects.hbs',
-    // Item partials
-    'systems/swords-wizardry/templates/item/parts/item-effects.hbs',
+    'systems/swords-wizardry/module/actor/features.hbs',
+    'systems/swords-wizardry/module/actor/weapons.hbs',
+    'systems/swords-wizardry/module/actor/items.hbs',
+    'systems/swords-wizardry/module/actor/spells.hbs',
+    'systems/swords-wizardry/module/actor/effects.hbs',
+    'systems/swords-wizardry/module/rolls/damage-and-effect-roll-sheet.hbs'
   ]);
 };

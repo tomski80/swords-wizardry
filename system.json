@@ -4,11 +4,15 @@
   "description": "The Swords & Wizardry compatible game system. 'Swords & Wizardry, S&W, and Mythmere Games are trademarks of Mythmere Games LLC', The author is not affiliated in any way with Mythmere Games LLC.",
   "authors": [
     {
+      "name": "Caz",
+      "discord": "vonkow"
+    },
+    {
       "name": "Tomasz Straszewski",
       "discord": "---"
     }
   ],
-  "url": "https://github.com/tomski80/swords-wizardry",
+  "url": "https://github.com/vonkow/swords-wizardry",
   "license": "LICENSE.txt",
   "readme": "README.md",
   "bugs": "",
@@ -20,10 +24,10 @@
       "thumbnail": ""
     }
   ],
-  "version": "1.1.3",
+  "version": "4.3.1",
   "compatibility": {
-    "minimum": 11,
-    "verified": "11.313"
+    "minimum": 13,
+    "verified": "14.367"
   },
   "esmodules": ["module/swords-wizardry.mjs"],
   "styles": ["css/swords-wizardry.css"],
@@ -37,16 +41,57 @@
       "lang": "de",
       "name": "Deutsch",
       "path": "lang/de.json"
+    },
+    {
+      "lang": "es",
+      "name": "Spanish",
+      "path": "lang/es.json"
     }
   ],
-  "packs": [],
+  "packs":[],
   "packFolders": [],
-  "socket": false,
-  "manifest": "https://github.com/tomski80/swords-wizardry/releases/download/v1.1.3/system.json",
-  "download": "https://github.com/tomski80/swords-wizardry/releases/download/v1.1.3/swords-wizardry.zip",
+  "socket": true,
+  "manifest": "https://github.com/vonkow/swords-wizardry/releases/download/v4.3.1/system.json",
+  "download": "https://github.com/vonkow/swords-wizardry/releases/download/v4.3.1/swords-wizardry.zip",
+  "relationships": {
+    "recommends": [
+      {
+        "id": "swords-wizardry-content",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.1.0",
+          "verified": "1.2.1"
+        }
+      },
+      {
+        "id": "swords-wizardry-optional-content",
+        "type": "module",
+        "compatibility": {
+          "minimum": "0.1.0",
+          "verified": "1.1.0"
+        }
+      }
+    ]
+  },
+  "documentTypes": {
+    "Actor": {
+      "character": { "htmlFields": ["description"] },
+      "container": { "htmlFields": ["description"] },
+      "npc": { "htmlFields": ["description"] }
+    },
+    "Item": {
+      "armor": { "htmlFields": ["description"] },
+      "feature": { "htmlFields": ["description"] },
+      "item": { "htmlFields": ["description"] },
+      "spell": { "htmlFields": ["description"] },
+      "weapon": { "htmlFields": ["description"] }
+    }
+  },
   "background": "",
-  "gridDistance": 5,
-  "gridUnits": "ft",
-  "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power"
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "hp",
+  "secondaryTokenAttribute": "ac"
 }

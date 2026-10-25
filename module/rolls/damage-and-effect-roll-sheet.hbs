@@ -1,0 +1,98 @@
+<div class="swords-wizardry spell-card">
+  <header class="spell-card-header">
+    <img class="spell-card-image" src="{{item.img}}" alt=""/>
+    <div>
+      <h3>{{item.name}}</h3>
+      {{#if actor}}
+      {{#if isSpell}}
+      <div>{{localize "SWORDS_WIZARDRY.Chat.CastBy"}} {{actor.name}}</div>
+      {{else}}
+      <div>{{localize "SWORDS_WIZARDRY.Chat.UsedBy"}} {{actor.name}}</div>
+      {{/if}}
+      {{/if}}
+    </div>
+  </header>
+
+  <div class="spell-card-details">
+    {{#if isSpell}}
+    <span>{{localize "SWORDS_WIZARDRY.Item.Spell.Level"}} {{item.system.spellLevel}}</span>
+    {{#if item.system.range}}
+    <span>{{localize "SWORDS_WIZARDRY.Item.Spell.Range"}} {{item.system.range}}</span>
+    {{/if}}
+    {{#if item.system.duration}}
+    <span>{{localize "SWORDS_WIZARDRY.Item.Spell.Duration"}} {{item.system.duration}}</span>
+    {{/if}}
+    {{else}}
+    <!--<span>TODO Weapon details (like special damage?)</span>-->
+    {{/if}}
+  </div>
+
+  {{#if item.system.description}}
+  <div class="spell-card-description">{{{item.system.description}}}</div>
+  {{/if}}
+
+  <!-- TODO Change to if roll.formula !== 0 or something -->
+  {{#if roll}}
+  <div class="spell-card-roll">{{{roll}}}</div>
+  {{/if}}
+
+  {{#if requiresSave}}
+  <div class="spell-card-save">
+    <strong>{{localize "SWORDS_WIZARDRY.Chat.SavingThrow"}}:</strong>
+    {{#if saveEffectHalf}}
+      {{localize "SWORDS_WIZARDRY.Chat.HalfEffect"}}
+    {{else}}
+      <!-- TODO change to NegatesEffect -->
+      {{localize "SWORDS_WIZARDRY.Chat.NegatesSpell"}}
+    {{/if}}
+  </div>
+  {{/if}}
+
+  {{#if effects}}
+  <!-- TODO stylize -->
+  <div class="spell-card-save">{{localize "SWORDS_WIZARDRY.Chat.Effects"}} {{#each effects}}{{#unless @first}},&nbsp;{{/unless}}{{name}}{{/each}}</div>
+  {{/if}}
+  {{#if targets}}
+  <h4 class="targets">{{localize "SWORDS_WIZARDRY.Chat.Targets"}}</h4>
+  <div class="damage-targets">
+    {{#each targets}}
+    <div class="damage-target">
+      <div class="target-name"><strong>{{name}}</strong></div>
+      {{#if ../fullAction}}
+      <div class="damage-buttons">
+        <button class="apply-damage"
+          data-action="{{../fullAction}}"
+          data-actor-id="{{../actor.id}}"
+          data-item-id="{{../item.id}}"
+          data-target-id="{{id}}"
+          data-amount="{{../total}}"
+          {{#if (lookup ../appliedDamage id)}}disabled{{/if}}
+        >
+          <!-- TODO make below say "Damage" or "Heal" for those effects -->
+          {{localize "SWORDS_WIZARDRY.Chat.FullEffect"}}
+        </button>
+        {{#if ../requiresSave}}
+        <button class="apply-damage"
+          data-action="{{../saveAction}}"
+          data-actor-id="{{../actor.id}}"
+          data-target-id="{{id}}"
+          data-item-id="{{../item.id}}"
+          data-amount="{{../total}}"
+          {{#if (lookup ../appliedDamage id)}}disabled{{/if}}
+        >
+          {{localize "SWORDS_WIZARDRY.Chat.SuccessfulSave"}}:
+          {{#if ../saveEffectHalf}}
+            {{localize "SWORDS_WIZARDRY.Chat.HalfEffect"}}
+          {{else}}
+            {{localize "SWORDS_WIZARDRY.Chat.NegatesSpell"}}
+          {{/if}}
+        </button>
+        {{/if}}
+      </div>
+      {{/if}}
+      <div class="damage-result"></div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>

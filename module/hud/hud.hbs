@@ -1,0 +1,90 @@
+<div>
+  <span>AC: {{# if useAscendingAC }}{{actor.system.aac.value}}{{else}}{{actor.system.ac.value}}{{/if}} HP: {{actor.system.hp.value}}/{{actor.system.hp.max}}</span>
+  <ul class="combat-hud-list">
+    <li class="save-roll">
+      <div class='item-name'>
+        <a class='rollable' data-roll-type='save'>
+          <img
+            src="/systems/swords-wizardry/assets/game-icons-net/dice-twenty-faces-twenty.svg"
+            title="Saving Throw"
+            width="24"
+            height="24"
+          />
+          <span>{{ localize 'SWORDS_WIZARDRY.Stats.SavingThrow.long' }}</span>
+        </a>
+      </div>
+    </li>
+    {{#each actor.items as |item iid|}}
+    {{#if (eq item.type 'weapon')}}
+    <li class="item" data-item-id="{{item._id}}">
+      <div class='item-name'>
+        <a class='rollable' data-roll-type='item'>
+          <img
+            src='{{item.img}}'
+            title='{{item.name}}'
+            width='24'
+            height='24'
+          />
+          <span>{{item.name}}</span>
+        </a>
+      </div>
+    </li>
+    {{/if}}
+    {{/each}}
+    {{#each actor.items as |feature fid|}}
+    {{#if (eq feature.type 'feature')}}
+    {{#if feature.system.formula }}
+    <li class="item-feature" data-item-id="{{feature._id}}">
+      <div class="item-name">
+        <a class='rollable' data-roll-type='item'>
+          <img
+            src='{{feature.img}}'
+            title='{{feature.name}}'
+            width='24'
+            height='24'
+          />
+        </a>
+        <span>{{feature.name}}</span>
+      </div>
+    </li>
+    {{/if}}
+    {{/if}}
+    {{/each}}
+    {{#each actor.items as |item iid|}}
+    {{#if (eq item.type 'item')}}
+    {{#if item.system.usable}}
+    <li class="item" data-item-id="{{item._id}}">
+      <div class='item-name'>
+        <a class='rollable' data-roll-type='item'>
+          <img
+            src='{{item.img}}'
+            title='{{item.name}}'
+            width='24'
+            height='24'
+          />
+          <span>{{item.name}}{{#if item.system.consumable}} ({{item.system.quantity}}){{/if}}</span>
+        </a>
+      </div>
+    </li>
+    {{/if}}
+    {{/if}}
+    {{/each}}
+    {{#each actor.system.spellSlots as |level lid|}}
+    {{#each level.memorizedSpells as |spell sid|}}
+    <li class="item-cast" data-item-id="{{spell._id}}">
+      <div class='item-name'>
+        <a class='rollable' data-roll-type='item'>
+          <img
+            src='{{spell.img}}'
+            title='{{spell.name}}'
+            width='24'
+            height='24'
+          />
+          <span>{{spell.name}}</span>
+        </a>
+      </div>
+    </li>
+    {{/each}}
+    {{/each}}
+  </ul>
+</div>

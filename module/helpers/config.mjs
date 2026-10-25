@@ -23,24 +23,20 @@ SWORDS_WIZARDRY.abilityAbbreviations = {
 };
 
 
-SWORDS_WIZARDRY.bonuses = {
-  toHit: 'SWORDS_WIZARDRY.Bonus.toHit.long',
-  OpenDoor: 'SWORDS_WIZARDRY.Bonus.OpenDoor.long',
-  Damage: 'SWORDS_WIZARDRY.Bonus.Damage.long',
-  "Carry Mod": 'SWORDS_WIZARDRY.Bonus.CarryMod.long',
-  toMissiles: 'SWORDS_WIZARDRY.Bonus.toMissiles.long',
-  Armour: 'SWORDS_WIZARDRY.Bonus.Armour.long',
-  HPBonus: 'SWORDS_WIZARDRY.Bonus.HPBonus.long',
-  RaiseDeadChance: 'SWORDS_WIZARDRY.Bonus.RaiseDeadChance.long',
-  AddLanguages: 'SWORDS_WIZARDRY.Bonus.AddLanguages.long',
-  MaxSpecialHirelings: 'SWORDS_WIZARDRY.Bonus.MaxSpecialHirelings.long'
-}
-
-SWORDS_WIZARDRY.thieving = {
-  climbwalls: 'SWORDS_WIZARDRY.thieving.climbwalls.long',
-  delicatetask: 'SWORDS_WIZARDRY.thieving.delicatetask.long',
-  hearsound: 'SWORDS_WIZARDRY.thieving.hearsound.long',
-  hideinshadow: 'SWORDS_WIZARDRY.thieving.hideinshadow.long',
-  movesilently: 'SWORDS_WIZARDRY.thieving.movesilently.long',
-  openlocks: 'SWORDS_WIZARDRY.thieving.openlocks.long',
-}
+SWORDS_WIZARDRY.modifiers = {
+  toHit: 'SWORDS_WIZARDRY.Modifier.toHit.abbr',
+  openDoors: 'SWORDS_WIZARDRY.Modifier.OpenDoors.abbr',
+  damage: 'SWORDS_WIZARDRY.Modifier.Damage.abbr',
+  carry: 'SWORDS_WIZARDRY.Modifier.Carry.abbr',
+  missileToHit: 'SWORDS_WIZARDRY.Modifier.MissileToHit.abbr',
+  ac: 'SWORDS_WIZARDRY.Modifier.AC.abbr',
+  hp: 'SWORDS_WIZARDRY.Modifier.HP.abbr',
+  raiseDeadChance: 'SWORDS_WIZARDRY.Modifier.RaiseDeadChance.abbr',
+  additionalLanguages: 'SWORDS_WIZARDRY.Modifier.AdditionalLanguages.abbr',
+  maximumSpellLevel: 'SWORDS_WIZARDRY.Modifier.MaximumSpellLevel.abbr',
+  chanceToUnderstandSpell: 'SWORDS_WIZARDRY.Modifier.ChanceToUnderstandSpell.abbr',
+  minimumSpellsPerLevel: 'SWORDS_WIZARDRY.Modifier.MinimumSpellsPerLevel.abbr',
+  maximumSpellsPerLevel: 'SWORDS_WIZARDRY.Modifier.MaximumSpellsPerLevel.abbr',
+  maximumSpecialHirelings: 'SWORDS_WIZARDRY.Modifier.MaxSpecialHirelings.abbr',
+  retainerMoraleAdjustment: 'SWORDS_WIZARDRY.Modifier.RetainerMoraleAdjustment.abbr'
+};
